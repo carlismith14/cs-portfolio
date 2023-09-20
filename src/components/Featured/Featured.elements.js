@@ -20,6 +20,7 @@ export const ToplineFeatured = styled(TopLine)`
 
 export const TitleFeature = styled(Title)`
 /* text-align: center; */
+margin-bottom: 1em;
 
 `
 
