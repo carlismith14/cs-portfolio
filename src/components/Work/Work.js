@@ -13,6 +13,7 @@ import {
   ProjectVidContainer,
   ProjectDescription,
   IntroTextContainer,
+  ProjectDescripContainer,
 } from "./Work.elements";
 import portfolio1 from "../../images/portfolio-01.jpg";
 import portfolioDetails from "../../images/portfolio-details.jpg";
@@ -49,8 +50,7 @@ const Work = () => {
             ></ProjectVid>
           </ProjectVidContainer>
 
-          <IntroTextContainer>
-            <div>{/* <strong>DESCRIPTION</strong> */}</div>
+        <ProjectDescripContainer>
             <ProjectDescription>
               {/* The IntelliVue Sim File was created with React and acts as hybrid
               mobile/web application that simulates the look, feel and
@@ -64,9 +64,9 @@ const Work = () => {
               familiar with the monitor's operation using their mobile devices,
               simplifying their workflow and enhancing convenience.
             </ProjectDescription>
+            </ProjectDescripContainer>
 
-            <br></br>
-
+            <IntroTextContainer>
             <div>
               <strong>MY ROLE </strong>
             </div>

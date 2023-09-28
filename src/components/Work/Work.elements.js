@@ -13,19 +13,27 @@ export const ProjectGrid = styled.div`
 
   grid-template-areas:
     "intro vid"
+    "descrip vid"
     "text vid";
-  grid-template-rows: auto 1fr;
+
+  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr auto;
-  gap: 2em;
+  column-gap: 2em;
   align-items: start;
   justify-content: space-between;
+
+  div {
+    font-size: 0.99rem;
+  }
+
+  /* add media query for med sized screens (adjust fz) and just do stacks for  */
 `;
 
 export const ProjectVidContainer = styled.div`
   grid-area: vid;
   max-height: 1000px;
-display: grid;
-place-content: end;
+  display: grid;
+  place-content: end;
 `;
 
 export const ProjectVid = styled.video`
@@ -44,21 +52,21 @@ export const ProjectTitle = styled.h1`
   grid-area: title;
 `;
 
+export const ProjectDescripContainer = styled.div`
+  grid-area: descrip;
+  margin: 0;
+`;
 
 export const IntroTextContainer = styled.div`
-    grid-area: text;
-    /* padding-left: 2em; */
-    /* margin-top: 2em; */
+  grid-area: text;
+  /* padding-left: 2em; */
+  /* margin-top: -100px; */
 `;
 
-export const ProjectDescription = styled.div`
-
-`;
-
-
+export const ProjectDescription = styled.div``;
 
 export const Section = styled.section`
-    grid-area: intro;
+  grid-area: intro;
   /* padding: 3em 2em; */
   /* border: 4px solid green; */
 
@@ -71,8 +79,6 @@ export const Section = styled.section`
       "img title"
       "img subtitle";
     grid-template-columns: min-content max-content;
-
-    
 
     p {
       align-self: start;
