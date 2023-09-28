@@ -50,7 +50,20 @@ const Work = () => {
             ></ProjectVid>
           </ProjectVidContainer>
 
-        <ProjectDescripContainer>
+          {/* <ProjectDescripContainer>
+            <ProjectDescription>
+            
+              The IntelliVue Sim File, built with React, serves as a versatile
+              hybrid mobile/web application. It mirrors the form, function, and
+              user experience of Philips's portable patient monitoring system.
+              The goal was to create a user-friendly and accessible tool for
+              nurses and hospital staff. This application allows them to become
+              familiar with the monitor's operation using their mobile devices,
+              simplifying their workflow and enhancing convenience.
+            </ProjectDescription>
+          </ProjectDescripContainer> */}
+
+          <IntroTextContainer>
             <ProjectDescription>
               {/* The IntelliVue Sim File was created with React and acts as hybrid
               mobile/web application that simulates the look, feel and
@@ -64,12 +77,13 @@ const Work = () => {
               familiar with the monitor's operation using their mobile devices,
               simplifying their workflow and enhancing convenience.
             </ProjectDescription>
-            </ProjectDescripContainer>
 
-            <IntroTextContainer>
+            <br></br>
+
             <div>
               <strong>MY ROLE </strong>
             </div>
+
             <ProjectDescription>
               Sole Developer & Project Manager
             </ProjectDescription>
@@ -132,7 +146,7 @@ const Work = () => {
               timelines, and shaping expectations. Looking ahead, I've come to
               appreciate the critical significance of robust project
               architecture and the art of crafting reusable code, lessons that
-              will undoubtedly define my future projects.
+              will undoubtedly integrate into future projects.
             </ProjectDescription>
           </IntroTextContainer>
         </ProjectGrid>
