@@ -1,8 +1,8 @@
 export const projectOne = [
   {
-    title: "Philips 5500",
+    title: "Philips IntelliVue",
     description:
-      "Functional hybrid application simulating Philips 5500 Telemetry Device ",
+      "Functional hybrid application simulating Philips IntelliVue Telemetry Device ",
     img: require("../../images/projects/philips/philipsprojectimg1.png"),
     alt: "Image",
     // start: "true",

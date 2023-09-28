@@ -43,10 +43,16 @@ export const TitleAbout = styled(Title)`
   font-weight: 100;
 
   grid-area: title;
+
+  @media screen and (max-width:800px){
+   
+    font-size: 2.5rem;
+
+  }
 `;
 export const SubtitleAbout = styled(Subtitle)`
   padding-left: 2em;
-
+  font-size: 1.25rem;
   @media screen and (min-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 3;
@@ -57,7 +63,24 @@ export const SubtitleAbout = styled(Subtitle)`
     position: relative;
     left: -1.5em;
     width: calc(100% + 3.5em);
+
+   
   }
+
+  @media screen and (max-width:899px){
+    padding-left: 0;
+    /* font-size: .89rem; */
+    text-align: center;
+ }
+
+
+
+  @media screen and (max-width:600px){
+    padding-left: 0;
+    font-size: .89rem;
+    text-align: center;
+ }
+
 `;
 
 export const ImgAbout = styled(Img)`
@@ -67,9 +90,28 @@ export const ImgAbout = styled(Img)`
 `;
 
 export const ParagraphAbout = styled(Paragraph)`
-  max-width: 600px;
+
+@media screen and (min-width: 900px) {
+  max-width: 650px;
   padding-left: .45em;
 
+  }
+
+
+  /* max-width: none; */
+  /* padding-left: 0; */
+  /* grid-area: text; */
+  @media screen and (max-width:600px){
+    padding-left: .45em;
+
+
+    /* padding-left: 0; */
+    /* max-width: none; */
+    font-size: .85rem;
+
+
+
+  }
 `;
 
 export const ButtonAbout = styled(Button)``;

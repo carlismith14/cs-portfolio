@@ -58,6 +58,7 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
     transition: background 1s ease;
+    font-size: 1rem;
 
 }
 
@@ -85,8 +86,8 @@ h3 { font-size: var(--fs-h3) }
 /* strong {display:block} */
 
 :focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    /* outline: 3px solid var(--clr-accent); */
+    /* outline-offset: 3px; */
 }
 
 `;
