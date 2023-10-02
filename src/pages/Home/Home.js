@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <About></About>
       <Skills></Skills>
-      <Featured project={projectOne} ></Featured>
+      <Featured project={projectOne} id="work"></Featured>
     </>
   );
 };

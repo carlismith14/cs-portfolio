@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Section,
   Img,
@@ -14,15 +15,88 @@ import {
   ProjectDescription,
   IntroTextContainer,
   ProjectDescripContainer,
+  Container,
+  ButtonContainer,
+  Disclaimer,
+  BackContainer,
 } from "./Work.elements";
+
+
+import { 
+  FaHtml5,
+  FaCss3Alt,
+  FaReact, 
+  FaFigma,
+  FaJs,
+  FaSass,
+  FaGitSquare,
+  FaGithubSquare,
+  FaLinkedin
+ } from "react-icons/fa";
+
 import portfolio1 from "../../images/portfolio-01.jpg";
 import portfolioDetails from "../../images/portfolio-details.jpg";
 import video from "../../images/philipsscreendemo.mov";
 
+import pic1 from "../../images/portfolio-details.jpg";
+
+import philipsproject from "../../images/projects/philips/philipsmainscreen.png";
+
+import { ProjectImg } from "./Work.elements";
+
+import { MdOutlineArrowBackIosNew } from "react-icons/md";
+
+import { ButtonTest } from "../../GlobalStyles.styles";
+
+
 const Work = () => {
+  const mediaItems = [video, pic1, philipsproject];
+
+  const [currentItem, setCurrentItem] = useState(0);
+
+  const nextItem = () => {
+    setCurrentItem((currentItem + 1) % mediaItems.length);
+  };
+
+  const prevItem = () => {
+    setCurrentItem((currentItem - 1 + mediaItems.length) % mediaItems.length);
+  };
+
+  const handleBackButtonClick = () => {
+    const scrollPosition = window.pageYOffset;
+    window.history.back();
+    setTimeout(() => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          window.scrollTo(0, element.offsetTop);
+        }
+      } else {
+        window.scrollTo(0, scrollPosition);
+      }
+    }, 0);
+  }
+
+
   return (
     <>
       <Page>
+        {/* <Link to="/">
+
+          <button>back</button>
+        </Link> */}
+        
+       
+        
+        <BackContainer onClick={handleBackButtonClick}>
+          <ButtonTest>
+          <MdOutlineArrowBackIosNew></MdOutlineArrowBackIosNew>
+
+          </ButtonTest>
+          {/* <MdOutlineArrowBackIosNew onClick={handleBackButtonClick}></MdOutlineArrowBackIosNew> */}
+        </BackContainer>
+
         <ProjectGrid>
           {/* <ProjectTitle>Title of Project</ProjectTitle> */}
 
@@ -35,8 +109,47 @@ const Work = () => {
             {/* <Img src={portfolio1}></Img> */}
           </Section>
 
-          <ProjectVidContainer>
-            <ProjectVid
+          
+            {mediaItems[currentItem] && (
+              <ProjectVidContainer>
+                {mediaItems[currentItem].endsWith(".mov") ? (
+                  <ProjectVid
+                    disablePictureInPicture
+                    autoPlay
+                    playsInline
+                    loop
+                    muted
+                    loading="eager"
+                    style={{ width: "90%", margin: "auto" }}
+                    src={mediaItems[currentItem]}
+                  ></ProjectVid>
+                ) : (
+                  <ProjectImg
+                    src={mediaItems[currentItem]}
+                    alt={`Media ${currentItem + 1}`}
+                  />
+                )}
+                <Disclaimer>
+              *Please note that the demo link and source code for this project
+              are not available due to privacy concerns. However, you are
+              welcome to view screenshots and read the project writeup on the
+              GitHub repository.
+            </Disclaimer>
+            <ButtonContainer>
+              {/* <button>demo</button> */}
+              {/* <button>code</button> */}
+              <Link to="#" target="blank" >
+                <ButtonTest>
+                Github
+             <FaGithubSquare></FaGithubSquare>
+
+                </ButtonTest>
+              </Link>
+            </ButtonContainer>
+            </ProjectVidContainer>
+            )}
+
+            {/* <ProjectVid
               disablePictureInPicture
               //  src={RespPageWave}
               autoPlay
@@ -47,8 +160,16 @@ const Work = () => {
               style={{ width: "90%", margin: "auto" }}
               src={video}
               autoPlay
-            ></ProjectVid>
-          </ProjectVidContainer>
+            ></ProjectVid> */}
+
+            {/* <ButtonContainer>
+              <button onClick={prevItem}>Previous</button>
+              <button onClick={nextItem}>Next</button>
+            </ButtonContainer> */}
+
+           
+
+           
 
           {/* <ProjectDescripContainer>
             <ProjectDescription>

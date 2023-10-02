@@ -12,11 +12,10 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import WorkPage from "./pages/Work/WorkPage";
 
-import { 
-  MdOutlineLightMode,
-  MdOutlineDarkMode } from "react-icons/md";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { Mode } from "./components";
-
+import PuntaCana from "./components/Work/PuntaCana";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -25,15 +24,19 @@ function App() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  
+
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Router>
         <GlobalStyles />
+        <ScrollToTop />
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         {/* <Mode theme={theme} toggleTheme={toggleTheme}></Mode> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<WorkPage />} />
+          <Route path="/puntacana" element={<PuntaCana />} />
         </Routes>
         <Footer />
       </Router>

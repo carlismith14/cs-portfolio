@@ -53,6 +53,7 @@ export const TitleAbout = styled(Title)`
 export const SubtitleAbout = styled(Subtitle)`
   padding-left: 2em;
   font-size: 1.25rem;
+
   @media screen and (min-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 3;

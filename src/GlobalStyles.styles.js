@@ -30,6 +30,9 @@ export const GlobalStyles = createGlobalStyle`
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 @media (min-width: 800px) {
     :root {
@@ -60,6 +63,11 @@ body {
     transition: background 1s ease;
     font-size: 1rem;
 
+    &button{
+      border-color: ${(props) => props.theme.border};
+      border: 1px solid;
+
+    }
 }
 
 img {
@@ -90,6 +98,10 @@ h3 { font-size: var(--fs-h3) }
     /* outline-offset: 3px; */
 }
 
+#work {
+  scroll-margin-top: 6vh;
+
+}
 `;
 
 // export const Container = styled.div`
@@ -151,14 +163,12 @@ export const TopLine = styled.div`
 
   text-transform: uppercase;
 
-
-  font-size: .75rem;
-font-weight: 200;
-padding-left: .45em;
-margin-bottom: 1em;
-line-height: 1;
-letter-spacing: 0.4em;
-
+  font-size: 0.75rem;
+  font-weight: 200;
+  padding-left: 0.45em;
+  margin-bottom: 1em;
+  line-height: 1;
+  letter-spacing: 0.4em;
 `;
 
 // SECTION TITLE
@@ -170,7 +180,7 @@ export const Title = styled.h1`
   /* font-weight: 700; */
   font-size: 3rem;
   margin-bottom: 0.25em;
-  
+
   /* ADD IDEAL FZ for both fullscreen and mobile devices w/ media query  */
 
   @media (min-width: 800px) {
@@ -181,6 +191,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
   margin: 0;
   background: var(--clr-accent);
+
 `;
 
 // SECTION IMG
@@ -214,11 +225,71 @@ export const Button = styled.button`
 `;
 
 export const lightTheme = {
-  body: '#f5f5f5',
-  text: '#333',
-}
+  body: "#f5f5f5",
+  text: "#333",
+  border:"#black",
+
+};
 
 export const darkTheme = {
-  body: '#333',
-  text: '#f5f5f5',
-}
+  body: "#333",
+  text: "#f5f5f5",
+  border:"#f5f5f5",
+};
+
+export const ButtonTest = styled.button`
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  /* border: 1px solid; */
+
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  :after {
+    content: "";
+    /* background-color: #ffe54c; */
+    background: var(--clr-accent);
+    /* background: lightgrey; */
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+  :hover:after{
+    top: 0px;
+    left: 0px;
+    
+  }
+  /* @media (min-width: 768px) {
+  
+    padding: 13px 50px 13px;
+ 
+} */
+
+`;
+
+// .button52:after {
+
+// }
+
+// .button52:hover:after {
+
+// }
+
+// @media (min-width: 768px) {
+//   .button52 {
+//     padding: 13px 50px 13px;
+//   }
+// }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ export const FooterOne = styled.footer`
     text-align: center;
     font-size: var(--fs-h3);
     border-top: 1px solid rgba(0, 0, 0, 0.098);
-  
+    max-height: 100px;
     * {
         color: black;
         text-decoration: none;
@@ -16,7 +16,7 @@ export const FooterOne = styled.footer`
 
     a{
 
-    font-size: 1.2rem;
+    font-size: 1rem;
     }
 
     a:hover{
@@ -29,8 +29,9 @@ export const FooterUl = styled.ul`
 display:flex;
 justify-content: center;
 /* margin: 2em 0 0; */
-padding:0
-
+padding:0;
+margin:0;
+/* font-size: 3rem; */
 `;
 
 export const Footerli = styled.li`

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
     ButtonAbout,
   ImgAbout,
@@ -9,6 +10,9 @@ import {
   TopLineAbout,
 } from "./About.elements";
 import carli from "../../images/carli.jpg";
+import { ButtonTest } from "../../GlobalStyles.styles";
+
+
 const About = () => {
   return (
     <>
@@ -48,7 +52,11 @@ const About = () => {
 
 
        
-        <ButtonAbout>Let's Chat</ButtonAbout>
+        {/* <ButtonAbout>Let's Chat</ButtonAbout> */}
+        <Link to="mailto:@carli.t.smith1@gmail.com" >
+        
+        <ButtonTest>Let's Collaborate!</ButtonTest>
+        </Link>
       </SectionAbout>
     </>
   );

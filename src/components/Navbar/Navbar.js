@@ -11,6 +11,7 @@ import {
 import {
   MobileIcon,
   Nav,
+  NavA,
   NavBarContainer,
   NavIcon,
   NavItem,
@@ -31,7 +32,20 @@ const Navbar = (props) => {
   const closeMobileMenu = () => setClick((prevClick) => prevClick ? !prevClick : prevClick)
 
 
+  useEffect(() => {
+    // Check if the current location contains #work
+    if (window.location.hash === '#work') {
+      // Scroll to the #work section
+      const workSection = document.getElementById('work');
+      if (workSection) {
+        // Scroll with a margin at the top
+        // workSection.scrollTo({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        // workSection.style.scrollMarginTop = '6vh';
+        workSection.scrollIntoView({ behavior: 'smooth', block:'center' });
 
+      }
+    }
+  }, []);
 
 
   console.log(click)
@@ -48,16 +62,21 @@ const Navbar = (props) => {
             {click ? <VscClose /> : <VscMenu />}
 
           </MobileIcon>
-          <NavMenu props={props} onClick={handleClick} click={click}>
-            <NavItem>
+          <NavMenu props={props}  click={click}>
+
+          {/* <NavMenu props={props} onClick={handleClick} click={click}> */}
+            {/* <NavItem>
               <NavLinks props={props} to="/projects">About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/work">work</NavLinks>
+            </NavItem> */}
+            <NavItem onClick={closeMobileMenu}>
+              {/* <a href="#work">Work</a> */}
+              {/* <NavLinks to="#work">work</NavLinks> */}
+              <NavA href="/#work">Work</NavA>
             </NavItem>
 
-            <NavItem>
-              <NavLinks to="/projects">Contact</NavLinks>
+            <NavItem onClick={closeMobileMenu}>
+              <NavA href="mailto:@carli.t.smith1@gmail.com">Contact</NavA>
+              {/* <NavLinks to="">Contact</NavLinks> */}
             </NavItem>
           </NavMenu>
         </NavBarContainer>

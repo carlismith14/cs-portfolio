@@ -85,6 +85,8 @@ export const NavMenu = styled.ul`
   }
 `;
 
+
+
 export const NavItem = styled.li``;
 
 export const NavLinks = styled(Link)`
@@ -110,3 +112,27 @@ export const NavLinks = styled(Link)`
     }
   }
 `;
+
+export const NavA = styled.a`
+text-transform: uppercase;
+  letter-spacing: 0.25em;
+
+  color: ${(props) => props.theme.text};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+
+    &:hover {
+      /* color: #4b59f7; */
+      transition: all 0.3s ease;
+    }
+  }
+`
