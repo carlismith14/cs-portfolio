@@ -15,7 +15,7 @@ import {
 
   export const SectionSkills = styled(Section)`
   /* margin-top: 2em; */
-  height: 40vh;
+  /* height: 40vh; */
   /* display: flex; */
 /* align-items:center;  */
  `;
