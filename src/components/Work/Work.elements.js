@@ -147,7 +147,12 @@ export const ProjectDescripContainer = styled.div`
 export const IntroTextContainer = styled.div`
   grid-area: text;
   /* padding-left: 2em; */
-  margin-top: 50px;
+
+  margin-top: 20px;
+  @media screen and (min-width: 1100px){
+    margin-top: 50px;
+
+  }
 `;
 
 export const ProjectDescription = styled.div``;

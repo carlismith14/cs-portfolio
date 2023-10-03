@@ -8,7 +8,6 @@ import {
 
 } from "react-icons/io";
 
-
 import { 
   FaHtml5,
   FaCss3Alt,
@@ -20,8 +19,8 @@ import {
   FaGithubSquare
  } from "react-icons/fa";
 import { SectionSkills, SkillsWrapper, TitleSkills } from "./Skills.elements";
-
-
+import { ButtonTest } from "../../GlobalStyles.styles";
+import { HiArrowLongDown } from "react-icons/hi2";
 
 
 const SkillsHeading = styled.h1`
@@ -34,6 +33,9 @@ const SkillItem = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
+font-size: 1.2rem;
+/* gap: 2em; */
+/* margin-left: 1rem; */
 `;
 
 const SkillIcon = styled.div`
@@ -47,6 +49,7 @@ const Skills = () => {
   return (
     <>
     <SectionSkills>
+      <div>
     <TitleSkills>My Skills</TitleSkills>
 
       <SkillsWrapper>
@@ -83,6 +86,14 @@ const Skills = () => {
           <Skill>Figma</Skill>
         </SkillItem>
       </SkillsWrapper>
+      </div>
+      <div>
+      {/* <ButtonTest></ButtonTest> */}
+        {/* <IoIosArrowRoundDown
+></IoIosArrowRoundDown> */}
+{/* <HiArrowLongDown></HiArrowLongDown> */}
+
+      </div>
     </SectionSkills>
     </>
   );

@@ -238,13 +238,14 @@ export const darkTheme = {
 };
 
 export const ButtonTest = styled.button`
-  font-size: 16px;
+  font-size: .8rem;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
   border: 1px solid black;
   /* border: 1px solid; */
+  font-family: var(--ff-secondary);
 
   cursor: pointer;
   position: relative;

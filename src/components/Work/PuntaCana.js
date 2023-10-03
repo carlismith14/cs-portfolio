@@ -94,7 +94,7 @@ const PuntaCana = () => {
             <ButtonContainer>
               {/* <button>demo</button> */}
               {/* <button>code</button> */}
-              <Link to="#" target="blank" >
+              <Link to="https://dreamy-dieffenbachia-e80af6.netlify.app/" target="blank" >
                 <ButtonTest>
                 Demo Link
              
@@ -102,7 +102,7 @@ const PuntaCana = () => {
                 </ButtonTest>
               </Link>
 
-              <Link to="#" target="blank" >
+              <Link to="https://github.com/carlismith14/puntacana" target="blank" >
                 <ButtonTest>
                 Github
              <FaGithubSquare></FaGithubSquare>

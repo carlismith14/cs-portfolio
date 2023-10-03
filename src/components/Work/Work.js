@@ -138,7 +138,7 @@ const Work = () => {
             <ButtonContainer>
               {/* <button>demo</button> */}
               {/* <button>code</button> */}
-              <Link to="#" target="blank" >
+              <Link to="https://github.com/carlismith14/philips-intellivue" target="blank" >
                 <ButtonTest>
                 Github
              <FaGithubSquare></FaGithubSquare>

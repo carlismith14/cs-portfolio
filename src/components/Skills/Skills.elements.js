@@ -14,7 +14,15 @@ import {
 
 
   export const SectionSkills = styled(Section)`
-  `;
+  /* margin-top: 2em; */
+  height: 40vh;
+  /* display: flex; */
+/* align-items:center;  */
+ `;
+
+export const ScrollBox = styled.div`
+  
+`;
 
 export const TopLineSkills = styled(TopLine)`
 
@@ -34,9 +42,12 @@ display:flex;
 justify-content: center;
 align-items: center;
 gap: 2em; */
-display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   max-width: 800px;
   margin: auto;
   /* margin-top: 50px; */
-`;
+  gap: 2rem;
+  justify-self: center; /* Center the content horizontally in the second row */
+
+  `;

@@ -52,7 +52,8 @@ export const TitleAbout = styled(Title)`
 `;
 export const SubtitleAbout = styled(Subtitle)`
   padding-left: 2em;
-  font-size: 1.25rem;
+  font-size: 1.09rem;
+  font-family: var(--ff-secondary);
 
   @media screen and (min-width: 900px) {
     grid-column: 1 / -1;
@@ -91,7 +92,8 @@ export const ImgAbout = styled(Img)`
 `;
 
 export const ParagraphAbout = styled(Paragraph)`
-
+    font-family: var(--ff-primary);
+ font-size: 1.2rem;
 @media screen and (min-width: 900px) {
   max-width: 650px;
   padding-left: .45em;
