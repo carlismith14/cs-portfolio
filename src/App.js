@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalStyles, lightTheme, darkTheme } from "./GlobalStyles.styles";
@@ -24,7 +24,7 @@ function App() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  
+
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>

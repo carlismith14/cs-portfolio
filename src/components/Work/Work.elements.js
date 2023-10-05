@@ -7,7 +7,7 @@ export const BackContainer = styled.div`
   position: absolute;
   top:48%;
   left:4%;
-  z-index: 10000;
+  z-index: 100;
   /* left: 0; */
   border-radius: 50px;
   /* background-color: gray; */

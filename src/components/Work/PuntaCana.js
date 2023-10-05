@@ -12,7 +12,7 @@ import {
   IntroTextContainer,
   ProjectImg,
   ButtonContainer,
-  BackContainer
+  BackContainer,
 } from "./Work.elements";
 import video from "../../images/philipsscreendemo.mov";
 
@@ -24,17 +24,17 @@ import { Link } from "react-router-dom";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { ButtonTest } from "../../GlobalStyles.styles";
 
-import { 
+import {
   FaHtml5,
   FaCss3Alt,
-  FaReact, 
+  FaReact,
   FaFigma,
   FaJs,
   FaSass,
   FaGitSquare,
   FaGithubSquare,
-  FaLinkedin
- } from "react-icons/fa";
+  FaLinkedin,
+} from "react-icons/fa";
 
 const handleBackButtonClick = () => {
   const scrollPosition = window.pageYOffset;
@@ -50,17 +50,15 @@ const handleBackButtonClick = () => {
       window.scrollTo(0, scrollPosition);
     }
   }, 0);
-}
+};
 
 const PuntaCana = () => {
   return (
     <>
       <Page>
-
-      <BackContainer onClick={handleBackButtonClick}>
+        <BackContainer onClick={handleBackButtonClick}>
           <ButtonTest>
-          <MdOutlineArrowBackIosNew ></MdOutlineArrowBackIosNew>
-
+            <MdOutlineArrowBackIosNew></MdOutlineArrowBackIosNew>
           </ButtonTest>
           {/* <MdOutlineArrowBackIosNew onClick={handleBackButtonClick}></MdOutlineArrowBackIosNew> */}
         </BackContainer>
@@ -94,23 +92,23 @@ const PuntaCana = () => {
             <ButtonContainer>
               {/* <button>demo</button> */}
               {/* <button>code</button> */}
-              <Link to="https://dreamy-dieffenbachia-e80af6.netlify.app/" target="blank" >
-                <ButtonTest>
-                Demo Link
-             
-
-                </ButtonTest>
+              <Link
+                to="https://punta-cana-restaurant.netlify.app/"
+                target="blank"
+              >
+                <ButtonTest>Demo Link</ButtonTest>
               </Link>
 
-              <Link to="https://github.com/carlismith14/puntacana" target="blank" >
+              <Link
+                to="https://github.com/carlismith14/puntacana"
+                target="blank"
+              >
                 <ButtonTest>
-                Github
-             <FaGithubSquare></FaGithubSquare>
-
+                  Github
+                  <FaGithubSquare></FaGithubSquare>
                 </ButtonTest>
               </Link>
             </ButtonContainer>
-
           </ProjectVidContainer>
 
           <IntroTextContainer>

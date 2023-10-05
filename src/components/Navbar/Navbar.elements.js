@@ -1,5 +1,7 @@
 import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 
 export const Nav = styled.div`
   transition: background 1s ease;
@@ -29,6 +31,21 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavLogo = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.85rem;
+  color: ${(props) => props.theme.text};
+
+  @media screen and (max-width: 960px) {
+    justify-self: center;
+    align-self: flex-start;
+    padding: 3em 0em;
+  }
+`;
+
+export const NavLogoA = styled.a`
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -82,10 +99,9 @@ export const NavMenu = styled.ul`
     transition: all 0.5s ease;
     background-color: ${(props) => props.theme.body};
     color: ${(props) => props.theme.text};
+    z-index: 1000000;
   }
 `;
-
-
 
 export const NavItem = styled.li``;
 
@@ -113,8 +129,14 @@ export const NavLinks = styled(Link)`
   }
 `;
 
+
+
+export const NavLinkTest = styled(NavLink)`
+
+`
+
 export const NavA = styled.a`
-text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 0.25em;
 
   color: ${(props) => props.theme.text};
@@ -135,4 +157,4 @@ text-transform: uppercase;
       transition: all 0.3s ease;
     }
   }
-`
+`;
