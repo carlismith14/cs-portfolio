@@ -16,6 +16,7 @@ import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { Mode } from "./components";
 import PuntaCana from "./components/Work/PuntaCana";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import AiChatbot from "./components/Work/AiChatbot";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -35,7 +36,9 @@ function App() {
         {/* <Mode theme={theme} toggleTheme={toggleTheme}></Mode> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/work" element={<WorkPage />} />
+          {/* <Route path="/work" element={<WorkPage />} /> */}
+          <Route path="/intellivue" element={<WorkPage />} />
+          <Route path="/aichatbot" element={<AiChatbot />} />
           <Route path="/puntacana" element={<PuntaCana />} />
         </Routes>
         <Footer />

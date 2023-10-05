@@ -122,11 +122,27 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Disclaimer = styled.div`
+margin-top: 2em;
   text-align: center;
-  max-width: 500px;
+  /* max-width: 500px; */
 
   font-style: italic;
+  /* background-color: pink; */
+  
+
+  @media screen and (max-width: 900px){
+    /* margin-top: 50px; */
+    /* margin-left: 3em; */
+
+  }
+
 `;
+
+export const DisclaimerText = styled.p`
+  max-width: 500px;
+  margin: auto;
+
+`
 
 export const ProjectImg = styled.img`
   /* max-height: 100vh; */

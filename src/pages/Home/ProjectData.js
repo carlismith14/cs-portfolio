@@ -5,9 +5,23 @@ export const projectOne = [
       "Functional hybrid application simulating Philips IntelliVue Telemetry Device ",
     img: require("../../images/projects/philips/philipsprojectimg1.png"),
     alt: "Image",
-    link:"/work"
+    // link:"/work",
+    link:"/intellivue",
+
     // start: "true",
   },
+  {
+    title: "Ai Chatbot",
+    description:
+      "Interactive web application with OpenAi integration",
+    // img: require("../../images/projects/philips/philipsprojectimg1.png"),
+    img: require("../../images/projects/aichatbot/Screenshot 2023-10-05 at 10.53.59 AM.png"),
+
+    alt: "Image",
+    link:"/aichatbot"
+    // start: "true",
+  },
+
 
   // {
   //   title: "eProcess Development",

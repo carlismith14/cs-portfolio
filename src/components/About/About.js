@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-    ButtonAbout,
+  ButtonAbout,
   ImgAbout,
   ParagraphAbout,
   SectionAbout,
@@ -11,7 +11,6 @@ import {
 } from "./About.elements";
 import carli from "../../images/carli.jpg";
 import { ButtonTest } from "../../GlobalStyles.styles";
-
 
 const About = () => {
   return (
@@ -24,7 +23,7 @@ const About = () => {
         </TitleAbout>
         <SubtitleAbout>front-end developer based in Brooklyn, NY</SubtitleAbout>
         <ImgAbout src={carli}></ImgAbout>
-  
+
         {/* <ParagraphAbout>
           As a digital advertising professional with a passion for UI design, I
           am excited to transition into front-end web development. With my
@@ -36,26 +35,25 @@ const About = () => {
 
         {/* opening sentence  */}
         <ParagraphAbout>
-        I am a self-taught software engineer with a focus on front-end development. 
-        {/* <br></br> */}
-        In 2022, I made the decision to leave my digital advertising career behind and embark on a journey of self-discovery. I soon uncovered a passion and aptitude for web development—a path I had never previously considered. This revelation ignited my determination to dive headfirst into this dynamic field. 
-        {/* <br></br> */}
-
-        Since then, I've been contracting on exciting web projects while continuing to learn and grow, eager to take on new challenges and opportunities.
-
+          I am a self-taught software engineer with a focus on front-end
+          development. In 2022, I made the decision to leave my digital
+          advertising career behind and embark on a journey of self-discovery. I
+          soon uncovered a passion and aptitude for web development—a path I had
+          never previously considered. This revelation ignited my determination
+          to dive headfirst into this dynamic field.
+          {/* <br></br> */}
+          Since then, I've been contracting on exciting web projects while
+          continuing to learn and grow, eager to take on new challenges and
+          opportunities.
         </ParagraphAbout>
 
         {/* background  */}
-    
+
         {/* In 2022, I left my job in digital advertising and embarked on a journey of self discovery. Unsure where to begin, I started looking at my career in retrospect and taking inventory of the types of projects that made me tick, what I was naturally good at, and tasks that I genuinely enjoyed doing. After a few months of introspection, countless personality quizzes, and some introductory coding tutorials, I uncovered a passion and aptitude for web development - a path that i heretofore never considered.  */}
 
-
-
-       
         {/* <ButtonAbout>Let's Chat</ButtonAbout> */}
-        <Link to="mailto:@carli.t.smith1@gmail.com" >
-        
-        <ButtonTest>Let's Collaborate!</ButtonTest>
+        <Link to="mailto:@carli.t.smith1@gmail.com">
+          <ButtonTest>Let's Collaborate!</ButtonTest>
         </Link>
       </SectionAbout>
     </>
