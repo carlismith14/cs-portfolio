@@ -10,11 +10,13 @@ import {
 } from "../../GlobalStyles.styles";
 
 export const SectionAbout = styled(Section)`
-    border-bottom: 1px solid rgba(0, 0, 0, 0.098);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.098);
 
   @media screen and (min-width: 900px) {
     display: grid;
     grid-template-columns: 1fr 400px;
+    /* grid-template-columns: 1fr 80%; */
+
     grid-template-areas:
       "about img"
       "title img"
@@ -30,13 +32,12 @@ export const SectionAbout = styled(Section)`
 `;
 
 export const TopLineAbout = styled(TopLine)`
-/* font-size: .75rem;
+  /* font-size: .75rem;
 font-weight: 200;
 padding-left: .45em;
 margin-bottom: 1em;
 line-height: 1;
 letter-spacing: 0.4em; */
-
 `;
 
 export const TitleAbout = styled(Title)`
@@ -44,16 +45,15 @@ export const TitleAbout = styled(Title)`
 
   grid-area: title;
 
-  @media screen and (max-width:800px){
-   
+  @media screen and (max-width: 800px) {
     font-size: 2.5rem;
-
   }
 `;
 export const SubtitleAbout = styled(Subtitle)`
   padding-left: 2em;
   font-size: 1.09rem;
   font-family: var(--ff-secondary);
+  color: #333;
 
   @media screen and (min-width: 900px) {
     grid-column: 1 / -1;
@@ -65,24 +65,19 @@ export const SubtitleAbout = styled(Subtitle)`
     position: relative;
     left: -1.5em;
     width: calc(100% + 3.5em);
-
-   
   }
 
-  @media screen and (max-width:899px){
+  @media screen and (max-width: 899px) {
     padding-left: 0;
     /* font-size: .89rem; */
     text-align: center;
- }
+  }
 
-
-
-  @media screen and (max-width:600px){
+  @media screen and (max-width: 600px) {
     padding-left: 0;
-    font-size: .89rem;
+    font-size: 0.89rem;
     text-align: center;
- }
-
+  }
 `;
 
 export const ImgAbout = styled(Img)`
@@ -92,28 +87,22 @@ export const ImgAbout = styled(Img)`
 `;
 
 export const ParagraphAbout = styled(Paragraph)`
-    font-family: var(--ff-primary);
- font-size: 1.2rem;
-@media screen and (min-width: 900px) {
-  max-width: 650px;
-  padding-left: .45em;
-
+  font-family: var(--ff-primary);
+  font-size: 1.2rem;
+  @media screen and (min-width: 900px) {
+    max-width: 650px;
+    padding-left: 0.45em;
   }
-
 
   /* max-width: none; */
   /* padding-left: 0; */
   /* grid-area: text; */
-  @media screen and (max-width:600px){
-    padding-left: .45em;
-
+  @media screen and (max-width: 600px) {
+    padding-left: 0.45em;
 
     /* padding-left: 0; */
     /* max-width: none; */
-    font-size: .85rem;
-
-
-
+    font-size: 0.85rem;
   }
 `;
 

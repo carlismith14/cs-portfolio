@@ -1,13 +1,16 @@
 import styled from "styled-components/macro";
 
 export const ProjectItem = styled.div`
-  margin-bottom: 5em;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  z-index: -1000;
+
+  margin-bottom: 2em;
   /* margin-top: 3em; */
   @media screen and (min-width: 800px) {
     display: grid;
     grid-template-areas:
-      "img text"
-      "img text"
       "img text";
     gap: 2em;
 

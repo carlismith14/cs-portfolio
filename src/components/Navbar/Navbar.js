@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+
 import { useLocation } from "react-router-dom"; // Import the useLocation hook
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Box } from "./Navbar.elements";
 
 import { VscMenu, VscClose } from "react-icons/vsc";
 
 import {
-
   Hlink,
   MobileIcon,
   Nav,
@@ -43,14 +42,13 @@ const Navbar = (props) => {
       //   }
       // }, []);
       // navigate('/#work');
-        navigate("/")
+      navigate("/");
 
       // setTimeout(() => {
       //   navigate('/#work');
-        
-      // }, 1000); // 
-      
-   
+
+      // }, 1000); //
+
       // const targetSection = document.querySelector("#work");
       // const targetTop = targetSection.getBoundingClientRect().top + window.scrollY;
       // const offset = 50; // Adjust the offset value as needed
@@ -77,51 +75,47 @@ const Navbar = (props) => {
   console.log(click);
   return (
     <>
+
+
       <Nav props={props}>
         <NavBarContainer>
-          <NavLogo props={props} to="/" onClick={closeMobileMenu}>
-            <NavIcon />
-            Carli Smith
-          </NavLogo>
+          <Box>
+            <NavLogo props={props} to="/" onClick={closeMobileMenu}>
+              <NavIcon />
+              Carli Smith
+            </NavLogo>
+          </Box>
 
-          {/* <NavLogoA props={props} href="/" onClick={closeMobileMenu}>
-            <NavIcon />
-            Carli Smith
-          </NavLogoA> */}
+       
 
           <Mode theme={props.theme} toggleTheme={props.toggleTheme}></Mode>
           <MobileIcon onClick={handleClick}>
             {click ? <VscClose /> : <VscMenu />}
           </MobileIcon>
-          <NavMenu props={props} click={click}>
-            {/* <NavMenu props={props} onClick={handleClick} click={click}> */}
-            {/* <NavItem>
-              <NavLinks props={props} to="/projects">About</NavLinks>
-            </NavItem> */}
-            <NavItem onClick={() => closeMobileMenu("work")}>
-              {/* <a href="#work">Work</a> */}
-              <NavA href="#work">Work</NavA>
-              {/* <button>Work</button> */}
-              <HashLink></HashLink>             
-              {/* <NavLinks to="/#work">1work</NavLinks> */}
-              {/* <NavA >Work</NavA> */}
-            </NavItem>
+         
+            
+            <NavMenu props={props} click={click}>
+          
+              <NavItem onClick={() => closeMobileMenu("work")}>
+                <NavA href="#work">Work</NavA>
+                <HashLink></HashLink>
+            
+              </NavItem>
 
-            <NavItem onClick={closeMobileMenu}>
-              {/* <NavA href="/#work">Work</NavA> */}
-              {/* <HashLink to="/#work">Work</HashLink> */}
-              {/* <a href="#work">Work</a> */}
-              {/* <NavLinks to="#work">work</NavLinks> */}
-              {/* <NavLinkTest to="#work">Work2</NavLinkTest> */}
-            </NavItem>
+              <NavItem onClick={closeMobileMenu}>
+           
+              </NavItem>
 
-            <NavItem onClick={closeMobileMenu}>
-              <NavA href="mailto:@carli.t.smith1@gmail.com">Contact</NavA>
-              {/* <NavLinks to="">Contact</NavLinks> */}
-            </NavItem>
-          </NavMenu>
+              <NavItem onClick={closeMobileMenu}>
+                <NavA href="mailto:@carli.t.smith1@gmail.com">Contact</NavA>
+              </NavItem>
+            </NavMenu>
+        
         </NavBarContainer>
+        
       </Nav>
+  
+
     </>
   );
 };

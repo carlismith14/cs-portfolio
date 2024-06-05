@@ -34,8 +34,6 @@ import {
   FaLinkedin
  } from "react-icons/fa";
 
-import portfolio1 from "../../images/portfolio-01.jpg";
-import portfolioDetails from "../../images/portfolio-details.jpg";
 import video from "../../images/philipsscreendemo.mov";
 
 import pic1 from "../../images/portfolio-details.jpg";
@@ -81,7 +79,8 @@ const Work = () => {
 
   return (
     <>
-      <Page>
+
+      {/* <Page> */}
         {/* <Link to="/">
 
           <button>back</button>
@@ -328,7 +327,7 @@ const Work = () => {
         
         src={video} autoPlay></video> */}
         {/* </ProjectItem> */}
-      </Page>
+      {/* </Page> */}
     </>
   );
 };

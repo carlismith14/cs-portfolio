@@ -1,12 +1,11 @@
 import styled from "styled-components/macro";
 
-
 export const BackContainer = styled.div`
   width: 25px;
   height: 25px;
   position: absolute;
-  top:48%;
-  left:4%;
+  top: 48%;
+  left: 4%;
   z-index: 100;
   /* left: 0; */
   border-radius: 50px;
@@ -17,11 +16,10 @@ export const BackContainer = styled.div`
 `;
 
 export const Page = styled.div`
-
   /* background-color: pink; */
   /* max-height: 100vh; */
-  width: 70%;
-  width: 80%;
+  /* width: 70%; */
+  /* width: 80%; */
 
   margin: auto;
   /* height: 100%; */
@@ -30,8 +28,7 @@ export const Page = styled.div`
 
 export const ProjectGrid = styled.div`
   /* display: grid; */
-  width: 100%;
-  
+  /* width: 100%; */
 
   div {
     font-size: 0.7rem;
@@ -40,35 +37,17 @@ export const ProjectGrid = styled.div`
   /* add media query for med sized screens (adjust fz) and just do stacks for  */
 
   @media screen and (min-width: 1100px) {
-    /* background-color: pink; */
     display: grid;
     width: 100%;
-    /* height: 100vh; */
-    grid-template-areas:
-      "intro vid"
-      "text vid";
-    /* grid-template-areas:
-    "intro vid"
-    "descrip vid"
-    "text vid"; */
-
-    /* grid-template-rows: min-content max-content; */
-
-    grid-template-rows: 20% 80%;
-    /* grid-template-columns: 40% auto; */
-    /* grid-template-columns: 1fr minmax(1fr, 900px); */
-    /* grid-template-columns: repeat(auto-fit, minmax(calc(600px - 6rem), 1fr)); */
+    grid-template-areas: "text vid";
 
     grid-template-columns: 1fr 55%;
 
-    /* grid-template-columns: 1fr 700px; */
 
     column-gap: 2em;
     row-gap: 0;
-    align-items: start;
-    /* align-items: ${({ center }) => (center ? "center" : "start")}; */
+    align-items: center;
 
-    /* "${({ secondary }) => (secondary ? "wave2" : "wave1")} hr" */
 
     justify-content: space-between;
   }
@@ -88,8 +67,8 @@ export const ProjectVidContainer = styled.div`
   grid-area: vid;
   /* max-height: 1000px; */
   display: grid;
-  place-content: center;
-  align-self: center;
+  /* place-content: center; */
+  /* align-self: center; */
   /* background-color: green; */
   /* background: green; */
   /* max-height: 100vh; */
@@ -108,7 +87,9 @@ export const ProjectVid = styled.video`
   /* align-self: start; */
   /* height: 100%; */
   /* width: 100%; */
-  max-width: 100%; /* Prevent images from exceeding their container's width */
+  /* max-width: 100%; Prevent images from exceeding their container's width */
+  /* max-width: 100%;  */
+
   max-height: 70vh;
   /* background: green; */
 `;
@@ -122,27 +103,23 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Disclaimer = styled.div`
-margin-top: 2em;
+  margin-top: 2em;
   text-align: center;
   /* max-width: 500px; */
 
   font-style: italic;
   /* background-color: pink; */
-  
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     /* margin-top: 50px; */
     /* margin-left: 3em; */
-
   }
-
 `;
 
 export const DisclaimerText = styled.p`
   max-width: 500px;
   margin: auto;
-
-`
+`;
 
 export const ProjectImg = styled.img`
   /* max-height: 100vh; */
@@ -164,10 +141,9 @@ export const IntroTextContainer = styled.div`
   grid-area: text;
   /* padding-left: 2em; */
 
-  margin-top: 20px;
-  @media screen and (min-width: 1100px){
-    margin-top: 50px;
-
+  /* margin-top: 20px; */
+  @media screen and (min-width: 1100px) {
+    /* margin-top: 50px; */
   }
 `;
 
@@ -179,7 +155,7 @@ export const Section = styled.section`
   /* border: 4px solid green; */
   margin-bottom: 0;
   @media screen and (min-width: 600px) {
-    display: grid;
+    /* display: grid; */
     /* width: min-content; */
     /* margin: 0 auto; */
     grid-column-gap: 1em;
@@ -202,15 +178,24 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   margin-bottom: 0.25em;
+  text-align: center;
+
+  @media screen and (min-width: 600px) {
+    text-align: left;
+  }
 `;
 
 export const Subtitle = styled.p`
   margin: 0;
-  font-size: var(--fs-h3);
+  font-size: 1.3rem;
+  /* font-size: var(--fs-h3); */
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   /* margin-bottom: 1em; */
+  @media screen and (min-width: 1200px) {
+    font-size: var(--fs-h3);
+  }
 `;
 
 export const Img = styled.img``;
@@ -218,7 +203,7 @@ export const Img = styled.img``;
 export const PortfolioItem = styled.div`
   border: 1px solid black;
   padding: 0 2em 2em;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto;
 
   max-width: 1600px;

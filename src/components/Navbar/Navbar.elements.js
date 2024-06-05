@@ -2,16 +2,16 @@ import styled from "styled-components/macro";
 import { Link, NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-
 export const Nav = styled.div`
   transition: background 1s ease;
+
   width: 100%;
   background-color: ${(props) => props.theme.body};
   /* background:  background-color: ${(props) => props.theme.body}; */
   color: ${(props) => props.theme.text};
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100000099;
   height: 80px;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 `;
@@ -22,11 +22,22 @@ export const NavBarContainer = styled.div`
   align-items: center;
   /* margin: 2em; */
   padding: 0 2em;
+  /* padding: 0 4em; */
+  /* max-width: 1200px; */
+margin: auto;
   height: 100%;
   width: 100%;
 
   @media screen and (max-width: 960px) {
     /* flex-direction: column; */
+  }
+`;
+
+export const Box = styled.div`
+  @media screen and (min-width: 960px) {
+    /* flex-direction: column; */
+
+    min-width: 300px;
   }
 `;
 
@@ -72,7 +83,8 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: -15px;
+    /* top: 0; */
     right: 0;
     transform: translate(-100%, 100%);
     font-size: 1.5rem;
@@ -96,10 +108,11 @@ export const NavMenu = styled.ul`
     top: 60px;
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: left 0.5s ease, background-color 1s ease;
+
     background-color: ${(props) => props.theme.body};
     color: ${(props) => props.theme.text};
-    z-index: 1000000;
+    z-index: 10000000;
   }
 `;
 
@@ -129,11 +142,7 @@ export const NavLinks = styled(Link)`
   }
 `;
 
-
-
-export const NavLinkTest = styled(NavLink)`
-
-`
+export const NavLinkTest = styled(NavLink)``;
 
 export const NavA = styled.a`
   text-transform: uppercase;

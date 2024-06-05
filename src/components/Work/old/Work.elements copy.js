@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
+export const Section2 = styled.section`
     padding: 5em 2em;
     border: 1px solid green;
+  max-width: 1200px;
 
     @media screen and (min-width: 600px) {
       display: grid;
-      width: min-content;
+  /* max-width: 1200px; */
+
       margin: 0 auto;
       grid-column-gap: 1em;
       grid-template-areas:
         "img title"
         "img subtitle";
-      grid-template-columns: min-content max-content;
+      grid-template-columns: max-content min-content;
     
 
         img {

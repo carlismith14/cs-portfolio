@@ -148,6 +148,8 @@ export const Container = styled.div`
 export const Section = styled.section`
   padding: 3em 2em;
   max-width: 1200px;
+  /* max-width: 1400px; */
+
   margin: 0 auto;
 `;
 
@@ -191,7 +193,6 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
   margin: 0;
   background: var(--clr-accent);
-
 `;
 
 // SECTION IMG
@@ -227,18 +228,20 @@ export const Button = styled.button`
 export const lightTheme = {
   body: "#f5f5f5",
   text: "#333",
-  border:"#black",
-
+  border: "#black",
+  test123: "pink",
 };
 
 export const darkTheme = {
   body: "#333",
   text: "#f5f5f5",
-  border:"#f5f5f5",
+  border: "#f5f5f5",
+  test123: "pink",
+
 };
 
 export const ButtonTest = styled.button`
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
@@ -246,7 +249,7 @@ export const ButtonTest = styled.button`
   border: 1px solid black;
   /* border: 1px solid; */
   font-family: var(--ff-secondary);
-
+  z-index: 1000;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -268,17 +271,15 @@ export const ButtonTest = styled.button`
     transition: 0.2s;
   }
 
-  :hover:after{
+  :hover:after {
     top: 0px;
     left: 0px;
-    
   }
   /* @media (min-width: 768px) {
   
     padding: 13px 50px 13px;
  
 } */
-
 `;
 
 // .button52:after {
@@ -294,3 +295,6 @@ export const ButtonTest = styled.button`
 //     padding: 13px 50px 13px;
 //   }
 // }
+
+
+

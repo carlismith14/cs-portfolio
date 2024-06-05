@@ -42,7 +42,7 @@ const About = () => {
           never previously considered. This revelation ignited my determination
           to dive headfirst into this dynamic field.
           {/* <br></br> */}
-          Since then, I've been contracting on exciting web projects while
+           {"  "}Since then, I've been contracting on exciting web projects while
           continuing to learn and grow, eager to take on new challenges and
           opportunities.
         </ParagraphAbout>

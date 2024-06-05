@@ -39,7 +39,7 @@ import {
 import portfolio1 from "../../images/portfolio-01.jpg";
 import portfolioDetails from "../../images/portfolio-details.jpg";
 import aidemovid from "../../images/projects/aichatbot/ai-demo-video.mov";
-import aidemovidmobile from "../../images/projects/aichatbot/ai-demo-video-mobile.mov"
+import aidemovidmobile from "../../images/projects/aichatbot/ai-demo-video-mobile.mov";
 
 import pic1 from "../../images/portfolio-details.jpg";
 
@@ -103,7 +103,6 @@ const AiChatbot = () => {
     };
   }, []);
 
-
   return (
     <>
       <Page>
@@ -144,7 +143,7 @@ const AiChatbot = () => {
                   style={{ width: "90%", margin: "auto" }}
                   src={getSrcForScreenSize()}
 
-                //   src={mediaItems[currentItem]}
+                  //   src={mediaItems[currentItem]}
                 ></ProjectVid>
               ) : (
                 <ProjectImg
@@ -155,10 +154,10 @@ const AiChatbot = () => {
 
               <Disclaimer>
                 <DisclaimerText>
-                      *Please note that the demo link and source code for this project
-                are not available due to privacy concerns. However, you are
-                welcome to view screenshots and read the project writeup on the
-                GitHub repository.
+                  *Please note that the demo link and source code for this
+                  project are not available due to privacy concerns. However,
+                  you are welcome to view screenshots and read the project
+                  writeup on the GitHub repository.
                 </DisclaimerText>
                 {/* *Please note that the demo link and source code for this project
                 are not available due to privacy concerns. However, you are
@@ -201,7 +200,6 @@ const AiChatbot = () => {
               <li>TypeScript</li>
               <li>OpenAi</li>
               <li>Github</li>
-
             </List>
 
             <Heading> Challenges & Highlights</Heading>
