@@ -18,6 +18,7 @@ import {
   /* height: 40vh; */
   /* display: flex; */
 /* align-items:center;  */
+border-bottom: 1px solid rgba(0, 0, 0, 0.098);
  `;
 
 export const ScrollBox = styled.div`

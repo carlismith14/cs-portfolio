@@ -83,7 +83,7 @@ export const projectOne = [
 
   {
     title: "eProcess Development",
-    subtitle: "telemetry device simulation",
+    subtitle: "compliant website",
 
     description: "Responsive site developed with Next.js and tailwind CSS",
     lightText: false,
@@ -104,7 +104,7 @@ export const projectOne = [
       intro:
         "Revamping the business website for the company I've been contracted with offered an insightful journey into website redesign. Identifying critical shortcomings in their previous site laid the groundwork for a comprehensive overhaul. Leveraging Next.js, we prioritized optimizing the new site for page load efficiency, accessibility, and SEO performance. This project not only addressed immediate needs but also laid a solid foundation for eProcess Development’s digital presence moving forward.",
       role: "Developer & Web Designer",
-      techStack: ["Next.js", "Typescript", "OpenAi", "Github"],
+      techStack: ["Next.js", "TailwindCSS", "Nodemailer", "AWS"],
       challenges: [
         "Implementation of Contact Form",
         "Establishing Site Infastructure & Framework",

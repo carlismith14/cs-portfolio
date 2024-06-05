@@ -2,28 +2,30 @@ import styled from "styled-components/macro";
 
 export const SectionAbout2 = styled.div`
   /* padding: 3em 2em; */
-  padding: 3em 0;
-
-  width: 80%;
+  /* padding: 3em 0; */
+  /* height: 0vh; */
+  width: 83%;
   margin: auto;
 
   @media screen and (min-width: 1300px) {
     display: grid;
     /* grid-template-columns: 1fr 400px; */
     /* grid-template-columns: 1fr 80%; */
-    grid-template-columns: 1fr 55%;
-    /* grid-template-columns: 1fr 1.5fr; */
-
+    /* grid-template-columns: 1fr 55%; */
+    grid-template-columns: 1fr 1.5fr;
+    /* grid-template-rows: 1fr 90%; */
+    /* grid-template-areas: */
+      /* "subtitle img" */
+      /* "text img"; */
+    grid-column-gap: 4em;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     grid-template-areas:
       "about img"
       "title img"
       "subtitle img"
       "text img"
       "button img";
-    grid-column-gap: 4em;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-
     button {
       max-width: 200px;
     }
@@ -47,8 +49,8 @@ export const TitleAbout2 = styled.h1`
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
-  font-size: 3rem;
-  font-size: 2.5rem;
+  /* font-size: 3rem; */
+  font-size: 2rem;
 
   margin-bottom: 0.25em;
   font-weight: 100;
@@ -71,6 +73,7 @@ export const SubtitleAbout2 = styled.p`
   font-size: 1.09rem;
   font-family: var(--ff-secondary);
   color: #333;
+  grid-area: subtitle;
 
   @media screen and (min-width: 900px) {
     grid-column: 1 / -1;
@@ -157,6 +160,7 @@ export const ButtonContainer2 = styled.div`
 `;
 
 export const ParagraphAbout2 = styled.p`
+  grid-area: text;
   font-family: var(--ff-primary);
   /* font-size: 1.2rem; */
   font-size: 0.7rem;

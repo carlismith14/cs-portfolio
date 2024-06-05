@@ -24,7 +24,7 @@ const ProjectComponent = ({ project }) => {
       </div>
 
       <ProjectText>
-        <ProjectTitle>{project.title}</ProjectTitle>
+        <ProjectTitle><strong>{project.title}</strong></ProjectTitle>
         <ProjectDescript>{project.description}</ProjectDescript>
         {/* <button>demo</button> */}
         {/* <button>code</button> */}

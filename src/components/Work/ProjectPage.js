@@ -4,9 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { ButtonTest } from "../../GlobalStyles.styles";
 
-import {
-  BackContainer,
-} from "./Work.elements";
+import { BackContainer } from "./Work.elements";
 
 import {
   SectionAbout2,
@@ -45,11 +43,20 @@ const ProjectPage = ({ project }) => {
           <MdOutlineArrowBackIosNew></MdOutlineArrowBackIosNew>
         </ButtonTest>
       </BackContainer>
-      <div style={{  margin: "auto" }}>
-        <SectionAbout2>
-            
+      <div style={{ margin: "auto", minHeight:'80vh' }}>
+        {/* <div style={{ width: "80%", margin: "auto", marginTop:"1em" }}>
           <TopLine2>FEATURED PROJECT</TopLine2>
-          <TitleAbout2><strong>{project.title}</strong></TitleAbout2>
+
+          <TitleAbout2>
+            <strong>{project.title}</strong>
+          </TitleAbout2>
+        </div> */}
+
+        <SectionAbout2>
+          <TopLine2>FEATURED PROJECT</TopLine2>
+          <TitleAbout2>
+            <strong>{project.title}</strong>
+          </TitleAbout2>
           <SubtitleAbout2>{project.subtitle}</SubtitleAbout2>
           <MediaContainer2>
             {project.projectInfo.media.img === true ? (
