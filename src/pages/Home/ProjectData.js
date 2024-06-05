@@ -121,6 +121,8 @@ export const projectOne = [
   },
   {
     title: "CMS Dashboard",
+    subtitle: "telemetry device simulation",
+
     description:
       "Interactive CMS dashboard with advanced Sort & Filter capabilities. Built with Next.js and Material UI components ",
     lightText: false,
@@ -164,6 +166,8 @@ export const projectOne = [
   },
   {
     title: "Punta Cana",
+    subtitle: "responsive restaurant website",
+
     description: "Static site developed using HTML, CSS & JavaScript",
     img: require("../../images/pc.png"),
     alt: "Image",
