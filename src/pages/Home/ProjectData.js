@@ -1,4 +1,88 @@
 export const projectOne = [
+
+  {
+    title: "eProcess Development",
+    subtitle: "compliant website",
+
+    description: "Responsive site developed with Next.js and tailwind CSS",
+    lightText: false,
+    img: require("../../images/eProcess2.png"),
+    link: "eprocess",
+
+    alt: "Image",
+    link2: "epd2",
+
+    projectInfo: {
+      media: {
+        img: true,
+        imgSrc: require("../../images/eProcess2.png"),
+        vid: false,
+        vidSrc: null,
+      },
+
+      intro:
+        "Revamping the business website for the company I've been contracted with offered an insightful journey into website redesign. Identifying critical shortcomings in their previous site laid the groundwork for a comprehensive overhaul. Leveraging Next.js, we prioritized optimizing the new site for page load efficiency, accessibility, and SEO performance. This project not only addressed immediate needs but also laid a solid foundation for eProcess Development’s digital presence moving forward.",
+      role: "Developer & Web Designer",
+      techStack: ["Next.js", "TailwindCSS", "Nodemailer", "AWS"],
+      challenges: [
+        "Implementation of Contact Form",
+        "Establishing Site Infastructure & Framework",
+        "Optimizing towards Performance, Accessibility & SEO Performance",
+        "Deployment via AWS",
+      ],
+      lessons:
+        "The process of rebuilding our company's website provided invaluable lessons, particularly in three key areas. Firstly, adopting Next.js revealed its transformative power in simplifying development workflows and optimizing performance. Secondly, embracing Tailwind CSS showcased its remarkable ease and flexibility, enabling rapid prototyping and seamless design adjustments. Lastly, navigating the deployment process on AWS deepened my understanding of cloud infrastructure management, emphasizing the importance of scalability and reliability. These experiences underscored the significance of leveraging the right technologies to achieve efficient, flexible, and robust web solutions.",
+      note: false,
+      noteContext: "",
+      githubLink: "#",
+      demoLink: "https://eprocessdevelopment.com/",
+    },
+  },
+
+  {
+    title: "FARIS Dashboard",
+    subtitle: "asset management tool & dashboard",
+
+    description:
+      "Interactive asset management dashboard with advanced Sort & Filter capabilities. Built with React and Material UI components ",
+    lightText: false,
+    img: require("../../images/faris_project_mainimage.png"),
+    link: "/cmsdashboard",
+
+    alt: "Image",
+    link2: "cms2",
+    projectInfo: {
+      media: {
+        img: true,
+        imgSrc: require("../../images/dashboard.png"),
+        vid: false,
+        vidSrc: null,
+      },
+
+      intro:
+        "The File Asset Resource Intelligence System (FARIS) is a centralized hub for storing and sharing essential business assets. As the front-end developer, I transformed Figma designs into a functional interface and collaborated with back-end developers to integrate all relevant assets and data. For this demo, I chose to highlight the most challenging feature: the “recently shared” dashboard. This demo focuses on this specific feature and does not reflect all the work done on the entire project. I used Mockaroo to generate a mock dataset, demonstrating the dashboard’s capabilities, including filtering and sorting of recently shared assets.",
+      role: "Frontend Development",
+      techStack: [
+        "React",
+        "Material UI",
+        "APIs",
+      ],
+      challenges: [
+        "Material UI Compoents",
+        "Advanced Table Features ",
+        "API Integration & Data Handling",
+        "Code Refactoring",
+      ],
+      lessons:
+        "Adapting to the project’s existing infrastructure required me to learn quickly and efficiently. I joined the project later in its development, which meant I had to get up to speed with Material UI and integrate seamlessly into the current tech stack. Initially, I struggled with understanding and customizing Material UI components, but as I persisted, I began to appreciate the value of using pre-built components, recognizing both their advantages and limitations.",
+      note: true,
+      // noteContext:
+      //   "*Please note that the demo link and source code for this project are not available due to privacy concerns. However, you are welcome to view screenshots and read the project writeup on the GitHub repository.",
+      githubLink: "#",
+      demoLink: "#",
+    },
+  },
+
   {
     title: "Philips IntelliVue",
     subtitle: "telemetry device simulation",
@@ -78,88 +162,6 @@ export const projectOne = [
         "*Please note that the demo link and source code for this project are not available due to privacy concerns. However, you are welcome to view screenshots and read the project writeup on the GitHub repository.",
       githubLink: "https://github.com/carlismith14/ai-chatbot",
       // demoLink: "https://punta-cana-restaurant.netlify.app/",
-    },
-  },
-
-  {
-    title: "eProcess Development",
-    subtitle: "compliant website",
-
-    description: "Responsive site developed with Next.js and tailwind CSS",
-    lightText: false,
-    img: require("../../images/eProcess2.png"),
-    link: "eprocess",
-
-    alt: "Image",
-    link2: "epd2",
-
-    projectInfo: {
-      media: {
-        img: true,
-        imgSrc: require("../../images/eProcess2.png"),
-        vid: false,
-        vidSrc: null,
-      },
-
-      intro:
-        "Revamping the business website for the company I've been contracted with offered an insightful journey into website redesign. Identifying critical shortcomings in their previous site laid the groundwork for a comprehensive overhaul. Leveraging Next.js, we prioritized optimizing the new site for page load efficiency, accessibility, and SEO performance. This project not only addressed immediate needs but also laid a solid foundation for eProcess Development’s digital presence moving forward.",
-      role: "Developer & Web Designer",
-      techStack: ["Next.js", "TailwindCSS", "Nodemailer", "AWS"],
-      challenges: [
-        "Implementation of Contact Form",
-        "Establishing Site Infastructure & Framework",
-        "Optimizing towards Performance, Accessibility & SEO Performance",
-        "Deployment via AWS",
-      ],
-      lessons:
-        "The process of rebuilding our company's website provided invaluable lessons, particularly in three key areas. Firstly, adopting Next.js revealed its transformative power in simplifying development workflows and optimizing performance. Secondly, embracing Tailwind CSS showcased its remarkable ease and flexibility, enabling rapid prototyping and seamless design adjustments. Lastly, navigating the deployment process on AWS deepened my understanding of cloud infrastructure management, emphasizing the importance of scalability and reliability. These experiences underscored the significance of leveraging the right technologies to achieve efficient, flexible, and robust web solutions.",
-      note: false,
-      noteContext: "",
-      githubLink: "#",
-      demoLink: "https://eprocessdevelopment.com/",
-    },
-  },
-  {
-    title: "FARIS Dashboard",
-    subtitle: "asset management tool & dashboard",
-
-    description:
-      "Interactive asset management dashboard with advanced Sort & Filter capabilities. Built with React and Material UI components ",
-    lightText: false,
-    img: require("../../images/faris_project_mainimage.png"),
-    link: "/cmsdashboard",
-
-    alt: "Image",
-    link2: "cms2",
-    projectInfo: {
-      media: {
-        img: true,
-        imgSrc: require("../../images/dashboard.png"),
-        vid: false,
-        vidSrc: null,
-      },
-
-      intro:
-        "The File Asset Resource Intelligence System (FARIS) is a centralized hub for storing and sharing essential business assets. As the front-end developer, I transformed Figma designs into a functional interface and collaborated with back-end developers to integrate all relevant assets and data. For this demo, I chose to highlight the most challenging feature: the “recently shared” dashboard. This demo focuses on this specific feature and does not reflect all the work done on the entire project. I used Mockaroo to generate a mock dataset, demonstrating the dashboard’s capabilities, including filtering and sorting of recently shared assets.",
-      role: "Frontend Development",
-      techStack: [
-        "React",
-        "Material UI",
-        "APIs",
-      ],
-      challenges: [
-        "Material UI Compoents",
-        "Advanced Table Features ",
-        "API Integration & Data Handling",
-        "Code Refactoring",
-      ],
-      lessons:
-        "Adapting to the project’s existing infrastructure required me to learn quickly and efficiently. I joined the project later in its development, which meant I had to get up to speed with Material UI and integrate seamlessly into the current tech stack. Initially, I struggled with understanding and customizing Material UI components, but as I persisted, I began to appreciate the value of using pre-built components, recognizing both their advantages and limitations.",
-      note: true,
-      // noteContext:
-      //   "*Please note that the demo link and source code for this project are not available due to privacy concerns. However, you are welcome to view screenshots and read the project writeup on the GitHub repository.",
-      githubLink: "#",
-      demoLink: "#",
     },
   },
   {
