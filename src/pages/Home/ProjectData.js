@@ -120,13 +120,13 @@ export const projectOne = [
     },
   },
   {
-    title: "CMS Dashboard",
-    subtitle: "telemetry device simulation",
+    title: "FARIS Dashboard",
+    subtitle: "asset management tool & dashboard",
 
     description:
-      "Interactive CMS dashboard with advanced Sort & Filter capabilities. Built with Next.js and Material UI components ",
+      "Interactive asset management dashboard with advanced Sort & Filter capabilities. Built with React and Material UI components ",
     lightText: false,
-    img: require("../../images/dashboard.png"),
+    img: require("../../images/faris_project_mainimage.png"),
     link: "/cmsdashboard",
 
     alt: "Image",
@@ -140,26 +140,24 @@ export const projectOne = [
       },
 
       intro:
-        "The IntelliVue Sim File, built with React, serves as a versatile hybrid mobile/web application. It mirrors the form, function, and user experience of Philips's portable patient monitoring system. The goal was to create a user-friendly and accessible tool for nurses and hospital staff. This application allows them to become familiar with the monitor's operation using their mobile devices, simplifying their workflow and enhancing convenience.",
-      role: "Sole Developer & Project Manager",
+        "The File Asset Resource Intelligence System (FARIS) is a centralized hub for storing and sharing essential business assets. As the front-end developer, I transformed Figma designs into a functional interface and collaborated with back-end developers to integrate all relevant assets and data. For this demo, I chose to highlight the most challenging feature: the “recently shared” dashboard. This demo focuses on this specific feature and does not reflect all the work done on the entire project. I used Mockaroo to generate a mock dataset, demonstrating the dashboard’s capabilities, including filtering and sorting of recently shared assets.",
+      role: "Frontend Development",
       techStack: [
         "React",
-        "React Router",
-        "React Context API",
-        "Styled Components",
-        "Capcitor",
+        "Material UI",
+        "APIs",
       ],
       challenges: [
-        "Managing State",
-        "Event Handling",
-        "Enabling Password Protection",
-        "Building & Optimizing for Native",
+        "Material UI Compoents",
+        "Advanced Table Features ",
+        "API Integration & Data Handling",
+        "Code Refactoring",
       ],
       lessons:
-        "While I stepped into the role with a foundation of skills, much of my growth happened in real-time, an invaluable experience that enhanced my knowledge far more than any tutorial ever could. I had the privilege of direct client engagement, taking charge of timelines, and shaping expectations. Looking ahead, I've come to appreciate the critical significance of robust project architecture and the art of crafting reusable code, lessons that will undoubtedly integrate into future projects.",
+        "Adapting to the project’s existing infrastructure required me to learn quickly and efficiently. I joined the project later in its development, which meant I had to get up to speed with Material UI and integrate seamlessly into the current tech stack. Initially, I struggled with understanding and customizing Material UI components, but as I persisted, I began to appreciate the value of using pre-built components, recognizing both their advantages and limitations.",
       note: true,
-      noteContext:
-        "*Please note that the demo link and source code for this project are not available due to privacy concerns. However, you are welcome to view screenshots and read the project writeup on the GitHub repository.",
+      // noteContext:
+      //   "*Please note that the demo link and source code for this project are not available due to privacy concerns. However, you are welcome to view screenshots and read the project writeup on the GitHub repository.",
       githubLink: "#",
       demoLink: "#",
     },

@@ -10,8 +10,7 @@ export const ProjectItem = styled.div`
   /* margin-top: 3em; */
   @media screen and (min-width: 800px) {
     display: grid;
-    grid-template-areas:
-      "img text";
+    grid-template-areas: "img text";
     gap: 2em;
 
     grid-template-columns: 2fr 1fr;
@@ -22,7 +21,7 @@ export const ProjectItem = styled.div`
 export const ProjectText = styled.div`
   grid-area: text;
   align-self: center;
-  color:#333;
+  color: #333;
 
   @media screen and (max-width: 800px) {
     margin-top: 2em;
