@@ -21,7 +21,9 @@ const About = () => {
           Hi, I'm <strong>Carli</strong>
           {/* 👋 */}
         </TitleAbout>
-        <SubtitleAbout>front-end developer based in Brooklyn, NY</SubtitleAbout>
+        <SubtitleAbout>
+          <div>front-end developer based in Brooklyn, NY</div>
+        </SubtitleAbout>
         <ImgAbout src={carli}></ImgAbout>
 
         {/* <ParagraphAbout>
@@ -35,14 +37,16 @@ const About = () => {
 
         {/* opening sentence  */}
         <ParagraphAbout>
-          I am a self-taught software engineer with a focus on front-end
-          development. In 2022, I made the decision to leave my digital
-          advertising career behind and embark on a journey of self-discovery. I
-          soon uncovered a passion and aptitude for web development—a path I had
-          never previously considered. This revelation ignited my determination
-          to dive headfirst into this dynamic field.
+          {/* I am a self-taught software engineer with a focus on front-end
+        development. */}
+          I am a software engineer with a focus on front-end development. In
+          2022, I made the decision to leave my digital advertising career
+          behind and embark on a journey of self-discovery. I soon uncovered a
+          passion and aptitude for web development—a path I had never previously
+          considered. This revelation ignited my determination to dive headfirst
+          into this dynamic field.
           {/* <br></br> */}
-           {"  "}Since then, I've been contracting on exciting web projects while
+          {"  "}Since then, I've been contracting on exciting web projects while
           continuing to learn and grow, eager to take on new challenges and
           opportunities.
         </ParagraphAbout>

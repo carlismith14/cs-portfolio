@@ -14,7 +14,9 @@ export const SectionAbout = styled(Section)`
 
   @media screen and (min-width: 900px) {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    /* grid-template-columns: 1fr 400px; */
+    grid-template-columns: 1fr 430px;
+
     /* grid-template-columns: 1fr 80%; */
 
     grid-template-areas:
@@ -64,7 +66,9 @@ export const SubtitleAbout = styled(Subtitle)`
     text-align: left;
     position: relative;
     left: -1.5em;
-    width: calc(100% + 3.5em);
+    /* width: calc(100% + 3.5em); */
+    width: calc(100% + 3em);
+
   }
 
   @media screen and (max-width: 899px) {
@@ -84,11 +88,23 @@ export const ImgAbout = styled(Img)`
   /* max-width: 400px; */
   grid-area: img;
   z-index: 10;
+  @media screen and (max-width: 899px) {
+    padding-left: 0;
+    /* font-size: .89rem; */
+    text-align: center;
+    /* max-width: 400px; */
+    align-self: center;
+    place-self: center;
+    place-content: center;
+    place-items: center;
+    margin: 0 auto;
+    max-height: 400px;
+  }
 `;
 
 export const ParagraphAbout = styled(Paragraph)`
   font-family: var(--ff-primary);
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   @media screen and (min-width: 900px) {
     max-width: 650px;
     padding-left: 0.45em;
