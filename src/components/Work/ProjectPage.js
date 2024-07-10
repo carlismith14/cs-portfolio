@@ -4,7 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { ButtonTest } from "../../GlobalStyles.styles";
 
-import { BackContainer } from "./Work.elements";
+import { BackContainer } from "./old/Work.elements";
 
 import {
   SectionAbout2,
@@ -43,7 +43,7 @@ const ProjectPage = ({ project }) => {
           <MdOutlineArrowBackIosNew></MdOutlineArrowBackIosNew>
         </ButtonTest>
       </BackContainer>
-      <div style={{ margin: "auto", minHeight:'80vh' }}>
+      <div style={{ margin: "auto", minHeight: "80vh" }}>
         {/* <div style={{ width: "80%", margin: "auto", marginTop:"1em" }}>
           <TopLine2>FEATURED PROJECT</TopLine2>
 
@@ -109,10 +109,18 @@ const ProjectPage = ({ project }) => {
             </div>
             {project.projectInfo.techStack.map((tech, index) => (
               <React.Fragment key={index}>
-                <div>{tech}</div>
+                <div style={{display:"inline"}}>
+                {tech}
+                {index !== project.projectInfo.techStack.length - 1 && ' | '}
+                  
+                  </div>
+                {/* <br></br> */}
+
+
               </React.Fragment>
             ))}
 
+            <br></br>
             <br></br>
 
             <div>

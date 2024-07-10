@@ -49,7 +49,7 @@ import { ProjectImg } from "./Work.elements";
 
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 
-import { ButtonTest } from "../../GlobalStyles.styles";
+import { ButtonTest } from "../../../GlobalStyles.styles";
 
 const AiChatbot = () => {
   const mediaItems = [aidemovid, pic1, philipsproject];

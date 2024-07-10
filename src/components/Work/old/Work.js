@@ -21,18 +21,17 @@ import {
   BackContainer,
 } from "./Work.elements";
 
-
-import { 
+import {
   FaHtml5,
   FaCss3Alt,
-  FaReact, 
+  FaReact,
   FaFigma,
   FaJs,
   FaSass,
   FaGitSquare,
   FaGithubSquare,
-  FaLinkedin
- } from "react-icons/fa";
+  FaLinkedin,
+} from "react-icons/fa";
 
 import video from "../../images/philipsscreendemo.mov";
 
@@ -44,8 +43,7 @@ import { ProjectImg } from "./Work.elements";
 
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 
-import { ButtonTest } from "../../GlobalStyles.styles";
-
+import { ButtonTest } from "../../../GlobalStyles.styles";
 
 const Work = () => {
   const mediaItems = [video, pic1, philipsproject];
@@ -74,61 +72,55 @@ const Work = () => {
         window.scrollTo(0, scrollPosition);
       }
     }, 0);
-  }
-
+  };
 
   return (
     <>
-
       {/* <Page> */}
-        {/* <Link to="/">
+      {/* <Link to="/">
 
           <button>back</button>
         </Link> */}
-        
-       
-        
-        <BackContainer onClick={handleBackButtonClick}>
-          <ButtonTest>
+
+      <BackContainer onClick={handleBackButtonClick}>
+        <ButtonTest>
           <MdOutlineArrowBackIosNew></MdOutlineArrowBackIosNew>
+        </ButtonTest>
+        {/* <MdOutlineArrowBackIosNew onClick={handleBackButtonClick}></MdOutlineArrowBackIosNew> */}
+      </BackContainer>
 
-          </ButtonTest>
-          {/* <MdOutlineArrowBackIosNew onClick={handleBackButtonClick}></MdOutlineArrowBackIosNew> */}
-        </BackContainer>
+      <ProjectGrid>
+        {/* <ProjectTitle>Title of Project</ProjectTitle> */}
 
-        <ProjectGrid>
-          {/* <ProjectTitle>Title of Project</ProjectTitle> */}
+        <Section>
+          <Title>
+            Philips <strong>IntelliVue</strong>
+            {/* <strong>Philips IntellVue</strong>    */}
+          </Title>
+          <Subtitle>telemetry device simulation</Subtitle>
+          {/* <Img src={portfolio1}></Img> */}
+        </Section>
 
-          <Section>
-            <Title>
-              Philips <strong>IntelliVue</strong>
-              {/* <strong>Philips IntellVue</strong>    */}
-            </Title>
-            <Subtitle>telemetry device simulation</Subtitle>
-            {/* <Img src={portfolio1}></Img> */}
-          </Section>
-
-          
-            {mediaItems[currentItem] && (
-              <ProjectVidContainer>
-                {mediaItems[currentItem].endsWith(".mov") ? (
-                  <ProjectVid
-                    disablePictureInPicture
-                    autoPlay
-                    playsInline
-                    loop
-                    muted
-                    loading="eager"
-                    style={{ width: "90%", margin: "auto" }}
-                    src={mediaItems[currentItem]}
-                  ></ProjectVid>
-                ) : (
-                  <ProjectImg
-                    src={mediaItems[currentItem]}
-                    alt={`Media ${currentItem + 1}`}
-                  />
-                )}
-                <Disclaimer>
+        {mediaItems[currentItem] && (
+          <ProjectVidContainer>
+            {mediaItems[currentItem].endsWith(".mov") ? (
+              <ProjectVid
+                disablePictureInPicture
+                autoPlay
+                playsInline
+                loop
+                muted
+                loading="eager"
+                style={{ width: "90%", margin: "auto" }}
+                src={mediaItems[currentItem]}
+              ></ProjectVid>
+            ) : (
+              <ProjectImg
+                src={mediaItems[currentItem]}
+                alt={`Media ${currentItem + 1}`}
+              />
+            )}
+            <Disclaimer>
               *Please note that the demo link and source code for this project
               are not available due to privacy concerns. However, you are
               welcome to view screenshots and read the project writeup on the
@@ -137,18 +129,20 @@ const Work = () => {
             <ButtonContainer>
               {/* <button>demo</button> */}
               {/* <button>code</button> */}
-              <Link to="https://github.com/carlismith14/philips-intellivue" target="blank" >
+              <Link
+                to="https://github.com/carlismith14/philips-intellivue"
+                target="blank"
+              >
                 <ButtonTest>
-                Github
-             <FaGithubSquare></FaGithubSquare>
-
+                  Github
+                  <FaGithubSquare></FaGithubSquare>
                 </ButtonTest>
               </Link>
             </ButtonContainer>
-            </ProjectVidContainer>
-            )}
+          </ProjectVidContainer>
+        )}
 
-            {/* <ProjectVid
+        {/* <ProjectVid
               disablePictureInPicture
               //  src={RespPageWave}
               autoPlay
@@ -161,16 +155,12 @@ const Work = () => {
               autoPlay
             ></ProjectVid> */}
 
-            {/* <ButtonContainer>
+        {/* <ButtonContainer>
               <button onClick={prevItem}>Previous</button>
               <button onClick={nextItem}>Next</button>
             </ButtonContainer> */}
 
-           
-
-           
-
-          {/* <ProjectDescripContainer>
+        {/* <ProjectDescripContainer>
             <ProjectDescription>
             
               The IntelliVue Sim File, built with React, serves as a versatile
@@ -183,95 +173,95 @@ const Work = () => {
             </ProjectDescription>
           </ProjectDescripContainer> */}
 
-          <IntroTextContainer>
-            <ProjectDescription>
-              {/* The IntelliVue Sim File was created with React and acts as hybrid
+        <IntroTextContainer>
+          <ProjectDescription>
+            {/* The IntelliVue Sim File was created with React and acts as hybrid
               mobile/web application that simulates the look, feel and
               functionality of Philips's transportable patient monitoring
               system. */}
-              The IntelliVue Sim File, built with React, serves as a versatile
-              hybrid mobile/web application. It mirrors the form, function, and
-              user experience of Philips's portable patient monitoring system.
-              The goal was to create a user-friendly and accessible tool for
-              nurses and hospital staff. This application allows them to become
-              familiar with the monitor's operation using their mobile devices,
-              simplifying their workflow and enhancing convenience.
-            </ProjectDescription>
+            The IntelliVue Sim File, built with React, serves as a versatile
+            hybrid mobile/web application. It mirrors the form, function, and
+            user experience of Philips's portable patient monitoring system. The
+            goal was to create a user-friendly and accessible tool for nurses
+            and hospital staff. This application allows them to become familiar
+            with the monitor's operation using their mobile devices, simplifying
+            their workflow and enhancing convenience.
+          </ProjectDescription>
 
-            <br></br>
+          <br></br>
 
-            <div>
-              <strong>MY ROLE </strong>
-            </div>
+          <div>
+            <strong>MY ROLE </strong>
+          </div>
 
-            <ProjectDescription>
-              Sole Developer & Project Manager
-            </ProjectDescription>
+          <ProjectDescription>
+            Sole Developer & Project Manager
+          </ProjectDescription>
 
-            {/* <div>
+          {/* <div>
               <strong>PROJECT PURPOSE</strong>
             </div> */}
-            <ProjectDescription>
-              {/* The application was designed to provide nurses and hospital staff
+          <ProjectDescription>
+            {/* The application was designed to provide nurses and hospital staff
               with a user-friendly and convenient way to familiarize themselves
               with the monitor using their mobile devices. */}
-            </ProjectDescription>
+          </ProjectDescription>
 
+          <br></br>
+
+          <div>
+            <strong>TECH STACK</strong>
+          </div>
+
+          <ProjectDescription>
+            React
             <br></br>
-
-            <div>
-              <strong>TECH STACK</strong>
-            </div>
-
-            <ProjectDescription>
-              React
-              <br></br>
-              React Router
-              <br></br>
-              React Context API
-              <br></br>
-              Styled Components
-              <br></br>
-              Capacitor
-              <br></br>
-            </ProjectDescription>
-
+            React Router
             <br></br>
-
-            <div>
-              <strong>CHALLENGES & HIGHLIGHTS</strong>
-            </div>
-            <ProjectDescription>
-              Managing State
-              <br></br>
-              Event Handling
-              <br></br>
-              Enabling Password Protection
-              <br></br>
-              Building & Optimizing for Native
-              <br></br>
-            </ProjectDescription>
-
+            React Context API
             <br></br>
+            Styled Components
+            <br></br>
+            Capacitor
+            <br></br>
+          </ProjectDescription>
 
-            <div>
-              <strong>LESSONS LEARNED</strong>
-            </div>
-            <ProjectDescription>
-              {/* architecture, client communication, learning on the go, reusable code,   */}
-              While I stepped into the role with a foundation of skills, much of
-              my growth happened in real-time, an invaluable experience that
-              enhanced my knowledge far more than any tutorial ever could. I had
-              the privilege of direct client engagement, taking charge of
-              timelines, and shaping expectations. Looking ahead, I've come to
-              appreciate the critical significance of robust project
-              architecture and the art of crafting reusable code, lessons that
-              will undoubtedly integrate into future projects.
-            </ProjectDescription>
-          </IntroTextContainer>
-        </ProjectGrid>
+          <br></br>
 
-        {/* <Section>
+          <div>
+            <strong>CHALLENGES & HIGHLIGHTS</strong>
+          </div>
+          <ProjectDescription>
+            Managing State
+            <br></br>
+            Event Handling
+            <br></br>
+            Enabling Password Protection
+            <br></br>
+            Building & Optimizing for Native
+            <br></br>
+          </ProjectDescription>
+
+          <br></br>
+
+          <div>
+            <strong>LESSONS LEARNED</strong>
+          </div>
+          <ProjectDescription>
+            {/* architecture, client communication, learning on the go, reusable code,   */}
+            While I stepped into the role with a foundation of skills, much of
+            my growth happened in real-time, an invaluable experience that
+            enhanced my knowledge far more than any tutorial ever could. I had
+            the privilege of direct client engagement, taking charge of
+            timelines, and shaping expectations. Looking ahead, I've come to
+            appreciate the critical significance of robust project architecture
+            and the art of crafting reusable code, lessons that will undoubtedly
+            integrate into future projects.
+          </ProjectDescription>
+        </IntroTextContainer>
+      </ProjectGrid>
+
+      {/* <Section>
         <Title>
           <strong>Philips IntellVue</strong>
           the Title of <strong> my project</strong>
@@ -280,7 +270,7 @@ const Work = () => {
         <Img src={portfolio1}></Img>
       </Section> */}
 
-        {/* <PortfolioItem>
+      {/* <PortfolioItem>
         <video 
            disablePictureInPicture
           //  src={RespPageWave}
@@ -313,9 +303,9 @@ const Work = () => {
         </p>
       </PortfolioItem> */}
 
-        {/* <ProjectItem> */}
+      {/* <ProjectItem> */}
 
-        {/* <video 
+      {/* <video 
            disablePictureInPicture
           //  src={RespPageWave}
            autoPlay
@@ -326,7 +316,7 @@ const Work = () => {
            style={{ width: "90%", margin: "auto" }}
         
         src={video} autoPlay></video> */}
-        {/* </ProjectItem> */}
+      {/* </ProjectItem> */}
       {/* </Page> */}
     </>
   );

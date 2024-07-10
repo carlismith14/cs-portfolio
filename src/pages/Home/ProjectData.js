@@ -34,7 +34,7 @@ export const projectOne = [
         "The process of rebuilding our company's website provided invaluable lessons, particularly in three key areas. Firstly, adopting Next.js revealed its transformative power in simplifying development workflows and optimizing performance. Secondly, embracing Tailwind CSS showcased its remarkable ease and flexibility, enabling rapid prototyping and seamless design adjustments. Lastly, navigating the deployment process on AWS deepened my understanding of cloud infrastructure management, emphasizing the importance of scalability and reliability. These experiences underscored the significance of leveraging the right technologies to achieve efficient, flexible, and robust web solutions.",
       note: false,
       noteContext: "",
-      githubLink: "#",
+      githubLink: "https://github.com/kurtrodenhizer/epd2024",
       demoLink: "https://eprocessdevelopment.com/",
     },
   },

@@ -23,7 +23,7 @@ import { Heading, List, Text1 } from "./PuntaCana.elements";
 import { Link } from "react-router-dom";
 
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
-import { ButtonTest } from "../../GlobalStyles.styles";
+import { ButtonTest } from "../../../GlobalStyles.styles";
 
 import {
   FaHtml5,
@@ -116,7 +116,14 @@ const Eprocess = () => {
 
           <IntroTextContainer>
             <ProjectDescription>
-              Revamping the business website for the company I've been contracted with offered an insightful journey into website redesign. Identifying critical shortcomings in their previous site laid the groundwork for a comprehensive overhaul. Leveraging Next.js, we prioritized optimizing the new site for page load efficiency, accessibility,  and SEO performance. This project not only addressed immediate needs but also laid a solid foundation for eProcess Development’s digital presence moving forward.
+              Revamping the business website for the company I've been
+              contracted with offered an insightful journey into website
+              redesign. Identifying critical shortcomings in their previous site
+              laid the groundwork for a comprehensive overhaul. Leveraging
+              Next.js, we prioritized optimizing the new site for page load
+              efficiency, accessibility, and SEO performance. This project not
+              only addressed immediate needs but also laid a solid foundation
+              for eProcess Development’s digital presence moving forward.
             </ProjectDescription>
 
             <Heading> MY ROLE</Heading>
@@ -129,7 +136,6 @@ const Eprocess = () => {
               <li>Tailwind CSS</li>
               <li>Nodemailer</li>
               <li>AWS</li>
-
             </List>
 
             <Heading> Challenges & Highlights</Heading>
@@ -137,13 +143,26 @@ const Eprocess = () => {
             <List>
               <li>Implementation of Contact Form</li>
               <li>Establishing Site Infastructure & Framework </li>
-              <li>Optimizing towards Performance, Accessibility & SEO Performance </li>
+              <li>
+                Optimizing towards Performance, Accessibility & SEO Performance{" "}
+              </li>
               <li>Deployment via AWS</li>
             </List>
 
             <Heading>LESSONS LEARNED</Heading>
             <Text1>
-            The process of rebuilding our company's website provided invaluable lessons, particularly in three key areas. Firstly, adopting Next.js revealed its transformative power in simplifying development workflows and optimizing performance. Secondly, embracing Tailwind CSS showcased its remarkable ease and flexibility, enabling rapid prototyping and seamless design adjustments. Lastly, navigating the deployment process on AWS deepened my understanding of cloud infrastructure management, emphasizing the importance of scalability and reliability. These experiences underscored the significance of leveraging the right technologies to achieve efficient, flexible, and robust web solutions.
+              The process of rebuilding our company's website provided
+              invaluable lessons, particularly in three key areas. Firstly,
+              adopting Next.js revealed its transformative power in simplifying
+              development workflows and optimizing performance. Secondly,
+              embracing Tailwind CSS showcased its remarkable ease and
+              flexibility, enabling rapid prototyping and seamless design
+              adjustments. Lastly, navigating the deployment process on AWS
+              deepened my understanding of cloud infrastructure management,
+              emphasizing the importance of scalability and reliability. These
+              experiences underscored the significance of leveraging the right
+              technologies to achieve efficient, flexible, and robust web
+              solutions.
             </Text1>
             {/* bem naming conventions, framework file organization & compartmentalization. made me realize i prefered development over design. */}
           </IntroTextContainer>
