@@ -21,7 +21,8 @@ export const GlobalStyles = createGlobalStyle`
     
     --clr-light: #fdfbf2;
     --clr-dark: #303030;
-    --clr-accent: #ffc543;
+    /* --clr-accent: #a0c7d4e5; */
+    --clr-accent:rgb(250, 231, 187);
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -148,7 +149,9 @@ export const Container = styled.div`
 
 // SECTION
 export const Section = styled.section`
-  padding: 3em 2em;
+  padding: 2.25em 2em;
+  /* padding: 3em 2em; */
+  
   max-width: 1200px;
   /* max-width: 1400px; */
 

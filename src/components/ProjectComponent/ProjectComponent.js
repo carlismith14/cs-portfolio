@@ -16,7 +16,10 @@ const ProjectComponent = ({ project }) => {
       <div
         style={{
           backgroundColor: "#fae7bb",
+          // backgroundColor:"#a0c7d4e5",
+
           padding: "2em",
+
           borderRadius: "10px",
         }}
       >
@@ -24,7 +27,9 @@ const ProjectComponent = ({ project }) => {
       </div>
 
       <ProjectText>
-        <ProjectTitle><strong>{project.title}</strong></ProjectTitle>
+        <ProjectTitle>
+          <strong>{project.title}</strong>
+        </ProjectTitle>
         <ProjectDescript>{project.description}</ProjectDescript>
         {/* <button>demo</button> */}
         {/* <button>code</button> */}
