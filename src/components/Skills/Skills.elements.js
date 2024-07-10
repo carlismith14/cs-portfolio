@@ -40,7 +40,7 @@ export const SkillItem = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
-  color: rgb(51, 51, 51);
+  /* color: rgb(51, 51, 51); */
   /* gap: 2em; */
   /* margin-left: 1rem; */
 `;
