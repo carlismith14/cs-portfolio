@@ -10,7 +10,9 @@ import {
   TopLineAbout,
 } from "./About.elements";
 // import carli from "../../images/carli.jpg";
-import carli from "../../images/carli.webp";
+// import carli from "../../images/carli.webp";
+import carli from "../../images/rsz_carli.jpg";
+
 
 import { ButtonTest } from "../../GlobalStyles.styles";
 
