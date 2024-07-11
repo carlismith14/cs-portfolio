@@ -7,7 +7,12 @@ export const projectOne = [
     description:
       "Business website optimized for accessibility, load time, & seo. Built with Next.js and tailwind CSS and deployed via AWS Amplify.",
     lightText: false,
-    img: require("../../images/eProcess2.png"),
+    // img: require("../../images/eProcess2.png"),
+    // img: "../../images/epdmock1.svg",
+    // img: require("../../images/epdmock2.png"),
+    img: require("../../images/ep.png"),
+
+
     link: "eprocess",
 
     alt: "Image",
@@ -16,7 +21,10 @@ export const projectOne = [
     projectInfo: {
       media: {
         img: true,
-        imgSrc: require("../../images/eProcess2.png"),
+        // imgSrc: require("../../images/eProcess2.png"),
+        // imgSrc: require("../../images/epdmock2.png"),
+        imgSrc: require("../../images/ep.png"),
+
         vid: false,
         vidSrc: null,
       },
@@ -51,7 +59,8 @@ export const projectOne = [
       // "Interactive asset management dashboard with advanced Sort & Filter capabilities. Built with React and Material UI components ",
       "Interactive asset management dashboard with advanced sort and filter capabilities, built with React and Material UI components. Utilizes APIs for dynamic data fetching and display.",
     lightText: false,
-    img: require("../../images/faris_project_mainimage.png"),
+    // img: require("../../images/faris_project_mainimage.png"),
+    img: require("../../images/faris_project_mainimage Background Removed.png"),
     link: "/cmsdashboard",
 
     alt: "Image",
@@ -60,7 +69,9 @@ export const projectOne = [
       media: {
         img: true,
         // imgSrc: require("../../images/dashboard.png"),
-        imgSrc: require("../../images/faris_project_mainimage.png"),
+        // imgSrc: require("../../images/faris_project_mainimage.png"),
+        imgSrc: require("../../images/faris_project_mainimage Background Removed.png"),
+
 
         vid: false,
         vidSrc: null,
@@ -140,7 +151,8 @@ export const projectOne = [
       "Interactive OpenAI-based chatbot app developed with Next.js. Combines AI with proprietary data for a company-wide training tool.",
 
     // img: require("../../images/projects/philips/philipsprojectimg1.png"),
-    img: require("../../images/projects/aichatbot/Screenshot 2023-10-05 at 10.53.59 AM.png"),
+    // img: require("../../images/projects/aichatbot/Screenshot 2023-10-05 at 10.53.59 AM.png"),
+    img: require("../../images/cb.png"),
 
     alt: "Image",
     link: "/aichatbot",
@@ -178,7 +190,9 @@ export const projectOne = [
     // description: "Static site developed using HTML, CSS & JavaScript",
     description:
       "Responsive restaurant website project demonstrating HTML, CSS, and JavaScript skills. Focused on responsive design challenges like navigation and menu display.",
-    img: require("../../images/pc.png"),
+    // img: require("../../images/pc.png"),
+    img: require("../../images/pc2.png"),
+
     alt: "Image",
     link: "/puntacana",
     // start: "true",

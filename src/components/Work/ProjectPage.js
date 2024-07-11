@@ -43,7 +43,7 @@ const ProjectPage = ({ project }) => {
           <MdOutlineArrowBackIosNew></MdOutlineArrowBackIosNew>
         </ButtonTest>
       </BackContainer>
-      <div style={{ margin: "auto", minHeight: "80vh" }}>
+      <div style={{ margin: "auto", minHeight: "80vh", display:"grid", placeContent:"center" }}>
         {/* <div style={{ width: "80%", margin: "auto", marginTop:"1em" }}>
           <TopLine2>FEATURED PROJECT</TopLine2>
 

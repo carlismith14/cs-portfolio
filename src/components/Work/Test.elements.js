@@ -1,5 +1,7 @@
 import styled from "styled-components/macro";
+import { Section } from "../../GlobalStyles.styles";
 
+// export const SectionAbout2 = styled(Section)`
 export const SectionAbout2 = styled.div`
   /* padding: 3em 2em; */
   padding: 0 1em;
@@ -57,12 +59,12 @@ export const TitleAbout2 = styled.h1`
 
   /* ADD IDEAL FZ for both fullscreen and mobile devices w/ media query  */
 
-  /* @media (min-width: 800px) {
+  @media (min-width: 800px) {
   }
 
   @media screen and (max-width: 800px) {
-    font-size: 2.5rem;
-  } */
+    font-size: 2rem;
+  }
 `;
 
 export const SubtitleAbout2 = styled.p`
@@ -109,7 +111,9 @@ export const MediaContainer2 = styled.div`
 
   padding-top: 2em;
   border-radius: 5%; */
-  max-width: 700px; 
+  /* max-width: 700px;  */
+  max-width: 750px; 
+
   /* max-height: 500px; */
 /* */
   /* width: 100%; */
@@ -138,7 +142,7 @@ export const MediaContainer2 = styled.div`
 `;
 
 export const ImgAbout2 = styled.img`
-  box-shadow: var(--bs);
+  /* box-shadow: var(--bs); */
   width: 100%;
   height: 100%;
   object-fit: cover;
