@@ -12,7 +12,7 @@ import {
 export const SectionAbout = styled(Section)`
   border-bottom: 1px solid rgba(0, 0, 0, 0.098);
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 960px) {
     display: grid;
     /* grid-template-columns: 1fr 400px; */
     grid-template-columns: 1fr 430px;
@@ -88,7 +88,7 @@ export const ImgAbout = styled(Img)`
   /* max-width: 400px; */
   grid-area: img;
   z-index: 10;
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 959px) {
     padding-left: 0;
     /* font-size: .89rem; */
     text-align: center;
@@ -98,7 +98,7 @@ export const ImgAbout = styled(Img)`
     place-content: center;
     place-items: center;
     margin: 0 auto;
-    max-height: 400px;
+    max-height: 450px;
   }
 `;
 
