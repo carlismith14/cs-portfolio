@@ -9,7 +9,9 @@ import {
   TitleAbout,
   TopLineAbout,
 } from "./About.elements";
-import carli from "../../images/carli.jpg";
+// import carli from "../../images/carli.jpg";
+import carli from "../../images/carli.webp";
+
 import { ButtonTest } from "../../GlobalStyles.styles";
 
 const About = () => {

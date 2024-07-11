@@ -10,7 +10,7 @@ export const projectOne = [
     // img: require("../../images/eProcess2.png"),
     // img: "../../images/epdmock1.svg",
     // img: require("../../images/epdmock2.png"),
-    img: require("../../images/ep.png"),
+    img: require("../../images/ep.webp"),
 
 
     link: "eprocess",
@@ -23,7 +23,7 @@ export const projectOne = [
         img: true,
         // imgSrc: require("../../images/eProcess2.png"),
         // imgSrc: require("../../images/epdmock2.png"),
-        imgSrc: require("../../images/ep.png"),
+        imgSrc: require("../../images/ep.webp"),
 
         vid: false,
         vidSrc: null,
@@ -60,7 +60,7 @@ export const projectOne = [
       "Interactive asset management dashboard with advanced sort and filter capabilities, built with React and Material UI components. Utilizes APIs for dynamic data fetching and display.",
     lightText: false,
     // img: require("../../images/faris_project_mainimage.png"),
-    img: require("../../images/faris_project_mainimage Background Removed.png"),
+    img: require("../../images/faris_project_mainimage Background Removed.webp"),
     link: "/cmsdashboard",
 
     alt: "Image",
@@ -70,7 +70,7 @@ export const projectOne = [
         img: true,
         // imgSrc: require("../../images/dashboard.png"),
         // imgSrc: require("../../images/faris_project_mainimage.png"),
-        imgSrc: require("../../images/faris_project_mainimage Background Removed.png"),
+        imgSrc: require("../../images/faris_project_mainimage Background Removed.webp"),
 
 
         vid: false,
@@ -103,7 +103,7 @@ export const projectOne = [
     description:
       // "Functional hybrid application simulating Philips IntelliVue Telemetry Device ",
       "Hybrid mobile/web app built with React to simulate Philips’s IntelliVue telemetry device for effective medical staff training and device practice.",
-    img: require("../../images/projects/philips/philipsprojectimg1.png"),
+    img: require("../../images/projects/philips/philipsprojectimg1.webp"),
     alt: "Image",
     // link:"/work",
     link: "/intellivue",
@@ -152,7 +152,7 @@ export const projectOne = [
 
     // img: require("../../images/projects/philips/philipsprojectimg1.png"),
     // img: require("../../images/projects/aichatbot/Screenshot 2023-10-05 at 10.53.59 AM.png"),
-    img: require("../../images/cb.png"),
+    img: require("../../images/cb.webp"),
 
     alt: "Image",
     link: "/aichatbot",
@@ -201,7 +201,7 @@ export const projectOne = [
     projectInfo: {
       media: {
         img: true,
-        imgSrc: require("../../images/pc.png"),
+        imgSrc: require("../../images/pc2.webp"),
         vid: false,
         vidSrc: null,
       },
