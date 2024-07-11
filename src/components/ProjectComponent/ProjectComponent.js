@@ -23,7 +23,9 @@ const ProjectComponent = ({ project }) => {
           borderRadius: "10px",
         }}
       >
-        <ProjectImg src={project.img}></ProjectImg>
+        <ProjectImg 
+        loading="lazy"
+        src={project.img}></ProjectImg>
       </div>
 
       <ProjectText>
