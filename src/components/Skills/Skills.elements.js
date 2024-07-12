@@ -101,7 +101,7 @@ export const SkillItem = styled.div`
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
-  color: black;
+  /* color: black; */
   width: 120px; /* Add a fixed width */
   height: 120px; /* Add a fixed height */
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
