@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import {
   ProjectDescript,
   ProjectImg,
+  ProjectImgWrapper,
   ProjectItem,
   ProjectText,
   ProjectTitle,
@@ -13,20 +14,9 @@ import { ButtonTest } from "../../GlobalStyles.styles";
 const ProjectComponent = ({ project }) => {
   return (
     <ProjectItem>
-      <div
-        style={{
-          backgroundColor: "#fae7bb",
-          // backgroundColor:"#a0c7d4e5",
-
-          padding: "2em",
-
-          borderRadius: "10px",
-        }}
-      >
-        <ProjectImg 
-        loading="lazy"
-        src={project.img}></ProjectImg>
-      </div>
+      <ProjectImgWrapper>
+        <ProjectImg loading="lazy" src={project.img}></ProjectImg>
+      </ProjectImgWrapper>
 
       <ProjectText>
         <ProjectTitle>

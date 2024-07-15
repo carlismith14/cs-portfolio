@@ -27,6 +27,15 @@ export const ProjectText = styled.div`
   }
 `;
 
+export const ProjectImgWrapper = styled.div`
+background-color:#fae7bb ;
+padding: 2em;
+border-radius: 10px;
+@media screen and (max-width: 800px) {
+   padding: 1.25em;
+  }
+`;
+
 export const ProjectImg = styled.img`
   grid-area: img;
 `;
