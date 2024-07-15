@@ -122,5 +122,6 @@ export const SkillsWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   margin: auto;
   gap: 3rem;
-  justify-self: center; /* Center the content horizontally in the second row */
+  place-items: center;
+  /* justify-self: center;  */
 `;
