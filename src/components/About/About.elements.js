@@ -105,7 +105,7 @@ export const ImgAbout = styled(Img)`
 export const ParagraphAbout = styled(Paragraph)`
   font-family: var(--ff-primary);
   /* font-size: 1.2rem; */
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 959px) {
     max-width: 650px;
     padding-left: 0.45em;
   }
