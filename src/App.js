@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalStyles, lightTheme, darkTheme } from "./GlobalStyles.styles";
@@ -32,7 +32,6 @@ function App() {
         <GlobalStyles />
         <ScrollToTop />
         <Navbar theme={theme} toggleTheme={toggleTheme} />
-        {/* <Mode theme={theme} toggleTheme={toggleTheme}></Mode> */}
         <Routes>
           <Route path="/" element={<Home />} />
       
