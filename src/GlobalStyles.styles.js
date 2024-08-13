@@ -55,10 +55,6 @@ body {
 
     background-color: ${(props) => props.theme.body};
     color: ${(props) => props.theme.text};
-    /* background: var(--clr-light); */
-    
-
-    /* color: var(--clr-dark); */
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -66,6 +62,8 @@ body {
     transition: background 1s ease;
     font-size: 1rem;
 
+
+    // does this matter?
     &button{
       border-color: ${(props) => props.theme.border};
       border: 1px solid;
@@ -107,28 +105,11 @@ h3 { font-size: var(--fs-h3) }
 }
 `;
 
-// export const Container = styled.div`
-// z-index: 1;
-// width: 100%;
-// max-width: 1200px;
-// margin: auto;
-// margin-right: auto;
-// margin-left: auto;
-// padding-right: 50px;
-// padding-left: 50px;
 
-// @media screen and (max-width: 991px) {
-//     padding-right: 30px;
-//     padding-left: 30px;
-// }
-// `
-
-// remove?
 export const GlobalSectionTitle = styled.h1`
   margin-bottom: 0.25em;
 `;
 
-// remove? might mess some stuff up
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
@@ -263,9 +244,7 @@ export const ButtonTest = styled.button`
 
   :after {
     content: "";
-    /* background-color: #ffe54c; */
     background: var(--clr-accent);
-    /* background: lightgrey; */
     width: 100%;
     z-index: -1;
     position: absolute;
@@ -286,16 +265,5 @@ export const ButtonTest = styled.button`
 } */
 `;
 
-// .button52:after {
 
-// }
 
-// .button52:hover:after {
-
-// }
-
-// @media (min-width: 768px) {
-//   .button52 {
-//     padding: 13px 50px 13px;
-//   }
-// }

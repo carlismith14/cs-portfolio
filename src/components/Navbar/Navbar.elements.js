@@ -1,41 +1,31 @@
 import styled from "styled-components/macro";
-import { Link, NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.div`
-  transition: background 1s ease;
-
-  width: 100%;
   background-color: ${(props) => props.theme.body};
-  /* background:  background-color: ${(props) => props.theme.body}; */
+  transition: background 1s ease;
   color: ${(props) => props.theme.text};
   position: sticky;
   top: 0;
   z-index: 100000099;
   height: 80px;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 `;
 
 export const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 2em; */
   padding: 0 2em;
-  /* padding: 0 4em; */
-  /* max-width: 1200px; */
-margin: auto;
+
+  margin: auto;
   height: 100%;
   width: 100%;
 
-  @media screen and (max-width: 960px) {
-    /* flex-direction: column; */
-  }
+ 
 `;
 
 export const Box = styled.div`
   @media screen and (min-width: 960px) {
-    /* flex-direction: column; */
 
     min-width: 300px;
   }
@@ -116,33 +106,11 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li``;
-
-export const NavLinks = styled(Link)`
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-
-  color: ${(props) => props.theme.text};
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-
-  @media screen and (max-width: 960px) {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-
-    &:hover {
-      /* color: #4b59f7; */
-      transition: all 0.3s ease;
-    }
-  }
+export const NavItem = styled.li`
 `;
 
-export const NavLinkTest = styled(NavLink)``;
+
+
 
 export const NavA = styled.a`
   text-transform: uppercase;
@@ -162,7 +130,6 @@ export const NavA = styled.a`
     display: table;
 
     &:hover {
-      /* color: #4b59f7; */
       transition: all 0.3s ease;
     }
   }

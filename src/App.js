@@ -11,10 +11,9 @@ import Footer from "./components/Footer/Footer";
 //Pages
 import Home from "./pages/Home/Home";
 
-
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
-import { projectOne } from "./pages/Home/ProjectData";
+import { projectData } from "./ProjectData";
 import ProjectPage from "./components/Work/ProjectPage";
 
 function App() {
@@ -24,8 +23,6 @@ function App() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-
-
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Router>
@@ -34,9 +31,8 @@ function App() {
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <Routes>
           <Route path="/" element={<Home />} />
-      
 
-          {projectOne.map((project) => (
+          {projectData.map((project) => (
             <Route
               key={project.link}
               path={project.link}

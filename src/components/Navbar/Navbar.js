@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 
 import { useLocation } from "react-router-dom"; // Import the useLocation hook
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,6 @@ import { Box } from "./Navbar.elements";
 import { VscMenu, VscClose } from "react-icons/vsc";
 
 import {
-  Hlink,
   MobileIcon,
   Nav,
   NavA,
@@ -33,30 +32,7 @@ const Navbar = (props) => {
 
   const closeMobileMenu = (linkName) => {
     if (linkName) {
-      // window.location.hash === "#work" && document.getElementById("work").ScrollToTop
-      //   if (window.location.hash === "#work") {
-      //     const workSection = document.getElementById("work");
-      //     if (workSection) {
-      //       workSection.scrollIntoView({ behavior: "smooth", block: "center" });
-      //     }
-      //   }
-      // }, []);
-      // navigate('/#work');
       navigate("/");
-
-      // setTimeout(() => {
-      //   navigate('/#work');
-
-      // }, 1000); //
-
-      // const targetSection = document.querySelector("#work");
-      // const targetTop = targetSection.getBoundingClientRect().top + window.scrollY;
-      // const offset = 50; // Adjust the offset value as needed
-      // window.scrollTo({
-      //   top: targetSection - offset,
-      //   behavior: 'smooth', // Optionally, you can add smooth scrolling
-      // });
-      // workSection.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
     setClick((prevClick) => (prevClick ? !prevClick : prevClick));
@@ -75,8 +51,6 @@ const Navbar = (props) => {
   console.log(click);
   return (
     <>
-
-
       <Nav props={props}>
         <NavBarContainer>
           <Box>
@@ -86,36 +60,25 @@ const Navbar = (props) => {
             </NavLogo>
           </Box>
 
-       
-
           <Mode theme={props.theme} toggleTheme={props.toggleTheme}></Mode>
           <MobileIcon onClick={handleClick}>
             {click ? <VscClose /> : <VscMenu />}
           </MobileIcon>
-         
-            
-            <NavMenu props={props} click={click}>
-          
-              <NavItem onClick={() => closeMobileMenu("work")}>
-                <NavA href="#work">Work</NavA>
-                <HashLink></HashLink>
-            
-              </NavItem>
 
-              <NavItem onClick={closeMobileMenu}>
-           
-              </NavItem>
+          <NavMenu props={props} click={click}>
+            <NavItem onClick={() => closeMobileMenu("work")}>
+              <NavA href="#work">Work</NavA>
+              <HashLink></HashLink>
+            </NavItem>
 
-              <NavItem onClick={closeMobileMenu}>
-                <NavA href="mailto:@carli.t.smith1@gmail.com">Contact</NavA>
-              </NavItem>
-            </NavMenu>
-        
+            <NavItem onClick={closeMobileMenu}></NavItem>
+
+            <NavItem onClick={closeMobileMenu}>
+              <NavA href="mailto:@carli.t.smith1@gmail.com">Contact</NavA>
+            </NavItem>
+          </NavMenu>
         </NavBarContainer>
-        
       </Nav>
-  
-
     </>
   );
 };
