@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import { useLocation } from "react-router-dom"; // Import the useLocation hook
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Box } from "./Navbar.elements";
@@ -14,18 +13,13 @@ import {
   NavBarContainer,
   NavIcon,
   NavItem,
-  NavLinkTest,
-  NavLinks,
   NavLogo,
-  NavLogoA,
   NavMenu,
 } from "./Navbar.elements";
 import Mode from "../Mode/Mode";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const Navbar = (props) => {
   const [click, setClick] = useState(false);
-  const location = useLocation();
   const navigate = useNavigate();
 
   const handleClick = () => setClick((prevClick) => !prevClick);

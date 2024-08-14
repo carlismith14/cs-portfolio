@@ -14,7 +14,6 @@ export const homeObjOne = {
     start: "true",
   };
   
-  // i personally would organize the above better.
   
   
   export const homeObjTwo = {

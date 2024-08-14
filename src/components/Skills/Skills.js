@@ -1,11 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-import {
-  IoLogoHtml5,
-  IoLogoCss3,
-  IoLogoSass,
-  IoLogoJavascript,
-} from "react-icons/io";
 
 import {
   FaHtml5,
@@ -13,53 +7,28 @@ import {
   FaReact,
   FaFigma,
   FaJs,
-  FaSass,
   FaGitSquare,
   FaGithubSquare,
 } from "react-icons/fa";
 import {
   SectionSkills,
   SkillsWrapper,
-  TitleSkills,
   TopLineSkills,
   SkillItem,
-  SkillIcon,
 } from "./Skills.elements";
-import { ButtonTest } from "../../GlobalStyles.styles";
-import { HiArrowLongDown } from "react-icons/hi2";
-import {
-  FeaturedSection,
-  ProjectDescript,
-  ProjectImg,
-  ProjectItem,
-  ProjectText,
-  ProjectTitle,
-  SectionFeature,
-  TitleFeature,
-  ToplineFeatured,
-} from "../Featured/Featured.elements";
 
-import { RiNextjsFill } from "react-icons/ri";
-
-import { RiNextjsLine } from "react-icons/ri";
 import { FaChrome } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
-import { RiTailwindCssLine } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { TbBrandNextjs } from "react-icons/tb";
 import { TbBrandTailwind } from "react-icons/tb";
 
-const SkillsHeading = styled.h1`
-  text-align: center;
-`;
-
 const Skill = styled.div`
-margin-top: 1rem;
-font-size:.8rem;
-text-align: center;
-
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
 `;
 
 const Skills = () => {
@@ -67,11 +36,7 @@ const Skills = () => {
     <>
       <SectionSkills>
         <div>
-          {/* <TitleSkills>My Skills</TitleSkills> */}
           <TopLineSkills>Skills</TopLineSkills>
-          {/* <ToplineFeatured>My Skills</ToplineFeatured> */}
-          {/* <TitleFeature>A range of my work</TitleFeature> */}
-
           <SkillsWrapper>
             <SkillItem>
               <FaHtml5 />
@@ -81,12 +46,7 @@ const Skills = () => {
               <FaCss3Alt />
               <Skill>CSS3</Skill>
             </SkillItem>
-            {/* <SkillItem>
-              <FaSass />
-              <Skill>Sass</Skill>
-            </SkillItem> */}
             <SkillItem>
-              {/* <RiTailwindCssLine /> */}
               <TbBrandTailwind />
               <Skill>TailwindCSS</Skill>
             </SkillItem>
@@ -103,7 +63,6 @@ const Skills = () => {
               <Skill>React</Skill>
             </SkillItem>
             <SkillItem>
-              {/* <RiNextjsFill /> */}
               <TbBrandNextjs />
               <Skill>Next.js</Skill>
             </SkillItem>
@@ -136,15 +95,8 @@ const Skills = () => {
               <Skill>Chrome DevTools</Skill>
             </SkillItem>
           </SkillsWrapper>
-
-
         </div>
-        <div>
-          {/* <ButtonTest></ButtonTest> */}
-          {/* <IoIosArrowRoundDown
-></IoIosArrowRoundDown> */}
-          {/* <HiArrowLongDown></HiArrowLongDown> */}
-        </div>
+        <div></div>
       </SectionSkills>
     </>
   );

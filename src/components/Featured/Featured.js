@@ -1,11 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 import {
-  FeaturedSection,
-  ProjectDescript,
-  ProjectImg,
-  ProjectItem,
-  ProjectText,
-  ProjectTitle,
   SectionFeature,
   TitleFeature,
   ToplineFeatured,
@@ -21,24 +15,18 @@ const Featured = ({ project }) => {
 
   const scrollToWorkSection = () => {
     if (workSectionRef.current) {
-      workSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      workSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  
   return (
     <div id="work" ref={workSectionRef}>
-    <SectionFeature>
-    
+      <SectionFeature>
         <ToplineFeatured>Featured Projects</ToplineFeatured>
         <TitleFeature>A range of my work</TitleFeature>
 
         {projectArry}
-
-        {/* <ProjectComponent project={project[0]}></ProjectComponent>
-    <ProjectComponent project={project[0]}></ProjectComponent> */}
-
-    </SectionFeature>
+      </SectionFeature>
     </div>
   );
 };
