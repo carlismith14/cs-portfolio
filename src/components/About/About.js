@@ -19,10 +19,12 @@ const About = () => {
       <SectionAbout>
         <TopLineAbout>About Me</TopLineAbout>
         <TitleAbout>
-          Hi, I'm <strong>Carli</strong>
+          Hello, I'm <strong>Carli</strong>
         </TitleAbout>
         <SubtitleAbout>
+          {/* <div>Digital Specialist based in Brooklyn, NY</div> */}
           <div>front-end developer based in Brooklyn, NY</div>
+
         </SubtitleAbout>
         <ImgAbout src={carli}></ImgAbout>
 
@@ -37,6 +39,11 @@ const About = () => {
           continuing to learn and grow, eager to take on new challenges and
           opportunities.
         </ParagraphAbout>
+
+        {/* <ParagraphAbout>
+    
+          I'm a digital professional with a passion for creating impactful online experiences. With a background in digital advertising and web development, I combine creative vision with technical expertise to craft user-focused solutions that drive engagement and growth. I've contributed to web development projects, digital marketing campaigns, and e-commerce initiatives — always driven by a desire to build meaningful, beautiful, and effective digital experiences.
+        </ParagraphAbout> */}
 
         <Link to="mailto:@carli.t.smith1@gmail.com">
           <ButtonTest>Let's Collaborate!</ButtonTest>
