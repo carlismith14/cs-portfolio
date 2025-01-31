@@ -27,9 +27,9 @@ const Footer1 = (props) => {
 
       <FooterUl>
         <Footerli>
-          <Footerlink to="https://github.com/carlismith14" target="blank">
+          {/* <Footerlink to="https://github.com/carlismith14" target="blank">
             <FaGithubSquare></FaGithubSquare>
-          </Footerlink>
+          </Footerlink> */}
         </Footerli>
         <Footerli>
           <Footerlink

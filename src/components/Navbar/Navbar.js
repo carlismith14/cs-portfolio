@@ -60,10 +60,10 @@ const Navbar = (props) => {
           </MobileIcon>
 
           <NavMenu props={props} click={click}>
-            <NavItem onClick={() => closeMobileMenu("work")}>
+            {/* <NavItem onClick={() => closeMobileMenu("work")}>
               <NavA href="#work">Work</NavA>
               <HashLink></HashLink>
-            </NavItem>
+            </NavItem> */}
 
             <NavItem onClick={closeMobileMenu}></NavItem>
 

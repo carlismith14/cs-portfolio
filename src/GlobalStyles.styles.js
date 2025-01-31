@@ -2,6 +2,8 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
 *,
 *::before,
 *::after{
@@ -15,6 +17,8 @@ export const GlobalStyles = createGlobalStyle`
     --ff-primary: 'poppins', sans-serif;
 
     --ff-secondary: 'Courier New';
+    /* --ff-script: 'league script', sans-serif; */
+    --ff-script: 'League Script', cursive;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -63,6 +67,13 @@ body {
     font-size: 1rem;
 
 
+    /* //new 1.31.25
+    height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; */
+
+
     // does this matter?
     &button{
       border-color: ${(props) => props.theme.border};
@@ -71,12 +82,28 @@ body {
     }
 }
 
+
+/* .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+} */
+
 img {
     display: block;
     max-width: 100%;
     
 }
 
+.script{
+  font-family: var(--ff-script);
+  text-transform: lowercase;
+  font-size: 2rem;
+}
 
 h1,
 h2,
@@ -105,7 +132,6 @@ h3 { font-size: var(--fs-h3) }
 }
 `;
 
-
 export const GlobalSectionTitle = styled.h1`
   margin-bottom: 0.25em;
 `;
@@ -132,11 +158,14 @@ export const Container = styled.div`
 export const Section = styled.section`
   padding: 2.25em 2em;
   /* padding: 3em 2em; */
-  
+
   max-width: 1200px;
   /* max-width: 1400px; */
 
   margin: 0 auto;
+
+  //1.31.25
+ 
 `;
 
 // FLEXBOX CONTAINER?
@@ -264,6 +293,3 @@ export const ButtonTest = styled.button`
  
 } */
 `;
-
-
-

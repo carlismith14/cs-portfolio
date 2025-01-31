@@ -27,7 +27,7 @@ export const NavBarContainer = styled.div`
 export const Box = styled.div`
   @media screen and (min-width: 960px) {
 
-    min-width: 300px;
+    /* min-width: 300px; */
   }
 `;
 

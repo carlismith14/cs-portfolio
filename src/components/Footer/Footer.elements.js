@@ -5,7 +5,7 @@ export const FooterOne = styled.footer`
   color: ${(props) => props.theme.test123};
   text-align: center;
   font-size: var(--fs-h3);
-  border-top: 1px solid rgba(0, 0, 0, 0.098);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.098); */
   max-height: 100px;
   * {
     /* color: white; */

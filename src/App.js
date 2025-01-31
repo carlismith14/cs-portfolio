@@ -26,9 +26,11 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Router>
+       
         <GlobalStyles />
         <ScrollToTop />
         <Navbar theme={theme} toggleTheme={toggleTheme} />
+      
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -40,8 +42,40 @@ function App() {
             />
           ))}
         </Routes>
+
+      
+       
         <Footer theme={theme} />
+
+       
+        
       </Router>
+{/* 
+      <Router>
+        <div className="app-container">
+        <GlobalStyles />
+        <ScrollToTop />
+        <Navbar theme={theme} toggleTheme={toggleTheme} />
+        <main className="content-wrapper">
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          {projectData.map((project) => (
+            <Route
+              key={project.link}
+              path={project.link}
+              element={<ProjectPage project={project} />}
+            />
+          ))}
+        </Routes>
+
+        </main>
+       
+        <Footer theme={theme} />
+
+        </div>
+        
+      </Router> */}
     </ThemeProvider>
   );
 }

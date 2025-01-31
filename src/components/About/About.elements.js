@@ -10,11 +10,20 @@ import {
 } from "../../GlobalStyles.styles";
 
 export const SectionAbout = styled(Section)`
-  border-bottom: 1px solid rgba(0, 0, 0, 0.098);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.098); */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.098); */
 
+/* height: 100vh;
+display: grid;
+place-items: center; */
   @media screen and (min-width: 960px) {
+  
+
     display: grid;
+    /* changed gtc 1.31 */
     grid-template-columns: 1fr 430px;
+    /* grid-template-columns: 1fr 500px; */
+
     grid-template-areas:
       "about img"
       "title img"
